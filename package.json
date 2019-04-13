@@ -1,0 +1,29 @@
+{
+  "name": "sushi-bar",
+  "version": "1.0.0",
+  "description": "Proyecto web para local de sushi.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GajardoEZ/sushi-bar.git"
+  },
+  "author": "@GajardoEz",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/GajardoEZ/sushi-bar/issues"
+  },
+  "homepage": "https://github.com/GajardoEZ/sushi-bar#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {}
+}

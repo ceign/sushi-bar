@@ -1,0 +1,2098 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
+
+@import "./modules/_variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 150px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    .div-logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      padding: 0;
+
+      .logo {
+        width: 185px;
+
+        img {
+          width: 100%;
+        }
+
+        img:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .div-nav {
+      padding: 0;
+
+      .main-menu {
+        height: 100%;
+
+        ul {
+          margin: 0;
+          height: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+
+          li {
+            letter-spacing: 2px;
+
+            a {
+              text-decoration: unset;
+
+              span {
+                text-transform: uppercase;
+                font-size: 0.69rem;
+                font-family: $montserrat;
+                font-weight: 600;
+                color: #fff;
+              }
+            }
+
+            /* Underline From Center */
+            .hvr-underline-from-center {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              position: relative;
+              overflow: hidden;
+            }
+            .hvr-underline-from-center:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              left: 51%;
+              right: 51%;
+              bottom: 0;
+              background: #fff;
+              height: 2px;
+              -webkit-transition-property: left, right;
+              transition-property: left, right;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.4s;
+              -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+            }
+            .hvr-underline-from-center:hover:before,
+            .hvr-underline-from-center:focus:before,
+            .hvr-underline-from-center:active:before {
+              left: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .info-contacto {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+
+      .opciones-contacto {
+        border: 1px solid $oro dotted;
+
+        .num-whatsapp {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 0.3rem;
+          position: relative;
+
+          .fa-whatsapp {
+            color: #25d366;
+            position: absolute;
+            left: 10%;
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 0.79rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .num-fijo {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 0.3rem;
+          position: relative;
+
+          .fa-phone-volume {
+            color: white;
+            position: absolute;
+            left: 10%;
+            color: rgb(42, 158, 208);
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 0.79rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .direccion {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 0.3rem;
+          position: relative;
+
+          .fa-map-marker-alt {
+            color: white;
+            position: absolute;
+            left: 10%;
+            color: rgb(209, 197, 30);
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 0.79rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+
+  .container-slide {
+    width: 100%;
+    height: 100%;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+
+  .bullets {
+    height: 10%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+
+    .container-bullets {
+      width: max-content;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+
+      .select-bullet {
+        height: 2px;
+        width: 25px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .select-bullet.active {
+        width: 60px;
+        background-color: #ffd900d5;
+      }
+    }
+  }
+
+  .chevrones {
+    height: 10%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    .container-chevrones {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .chevron-izquierdo {
+        color: #fff;
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #000000d5;
+        margin: auto;
+        margin-right: 1rem;
+        opacity: 0.7;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        position: unset;
+        background-image: unset;
+      }
+
+      .chevron-derecho {
+        color: #fff;
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #000000d5;
+        margin: auto;
+        margin-left: 1rem;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+section.bienvenido {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+@media (min-width: 1921px) {
+
+  header{
+
+    .menu{
+
+      .div-logo{
+        padding-left: 5%;
+      }
+    }
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .main-imagenes {
+        width: 40%;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        figure.first-img {
+          margin: 0;
+          position: absolute;
+          transform: translateY(50%);
+          left: 12rem;
+
+          img {
+            width: 400px;
+          }
+        }
+
+        figure.second-img {
+          margin: 0;
+          width: 40%;
+          position: absolute;
+          right: 6rem;
+          z-index: -1;
+          top: 4rem;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .main-text {
+        width: 60%;
+        height: auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 6.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 3.1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          line-height: 4rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          color: $gris;
+          font-size: 1.5rem;
+          line-height: 3rem;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 4px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 6.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size:3.1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          font-weight: 400;
+          color: $gris-claro;
+          font-size: 1.5rem;
+          line-height: 3rem;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        width: 80%;
+        figure{
+          margin: 0;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+
+  header{
+
+    .menu{
+
+      .div-logo{
+        padding-left: 5%;
+      }
+    }
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .main-imagenes {
+        width: 40%;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        figure.first-img {
+          margin: 0;
+          position: absolute;
+          transform: translateY(30%);
+          left: 12rem;
+        }
+
+        figure.second-img {
+          margin: 0;
+          width: 30%;
+          position: absolute;
+          right: 4rem;
+          z-index: -1;
+          top: 4rem;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .main-text {
+        width: 60%;
+        height: auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 4.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 2.1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          line-height: 2rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1rem;
+          color: $gris;
+          line-height: 2rem;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 0.9rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 4px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 4.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 2.1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          color: $gris;
+          font-weight: 400;
+          font-size: 1.05rem;
+          color: $gris-claro;
+          line-height: 2.1rem;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        width: 80%;
+        figure{
+          margin: 0;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+
+  header{
+
+    .menu{
+
+      .div-logo{
+        padding-left: 5%;
+      }
+    }
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .main-imagenes {
+        width: 50%;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        figure.first-img {
+          margin: 0;
+          position: absolute;
+          transform: translateY(30%);
+          left: 8rem;
+        }
+
+        figure.second-img {
+          margin: 0;
+          width: 40%;
+          position: absolute;
+          right: 4rem;
+          z-index: -1;
+          top: 4rem;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .main-text {
+        width: 50%;
+        height: auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 4.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 2.1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.05rem;
+          margin-bottom: 1rem;
+          line-height: 2rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1rem;
+          color: $gris;
+          line-height: 1.8rem;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: .8rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 4px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 4.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 2.1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          color: $gris;
+          font-weight: 400;
+          font-size: 1rem;
+          color: $gris-claro;
+          line-height: 1.8rem;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: .8rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        width: 80%;
+        figure{
+          margin: 0;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+
+  header{
+
+    .menu{
+
+      .div-logo{
+        padding-left: 5%;
+      }
+    }
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .main-imagenes {
+        width: 50%;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        figure.first-img {
+          margin: 0;
+          position: absolute;
+          transform: translateY(50%);
+          left: 5rem;
+        }
+
+        figure.second-img {
+          margin: 0;
+          width: 50%;
+          position: absolute;
+          right: 4rem;
+          z-index: -1;
+          top: 4rem;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .main-text {
+        width: 50%;
+        height: auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 4.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 2.1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+          line-height: 2.2rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.05rem;
+          color: $gris;
+          line-height: 2.1rem;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 4px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 4.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          font-size: 2.1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          color: $gris;
+          font-weight: 400;
+          font-size: 1.05rem;
+          color: $gris-claro;
+          line-height: 2.1rem;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        width: 80%;
+        figure{
+          margin: 0;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .main-imagenes {
+        width: 50%;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        figure.first-img {
+          margin: 0;
+          position: absolute;
+          transform: translateY(50%);
+        }
+
+        figure.second-img {
+          margin: 0;
+          width: 70%;
+          position: absolute;
+          right: 0;
+          z-index: -1;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .main-text {
+        width: 50%;
+        height: auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 2.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1rem;
+          color: $gris;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 2.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: $gris-claro;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        width: 80%;
+        figure{
+          margin: 0;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .main-imagenes {
+        width: 50%;
+        height: auto;
+        margin-right: 1rem;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        figure.first-img {
+          margin: 0;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        figure.second-img {
+          margin: 0;
+          width: 50%;
+          position: absolute;
+          right: 1rem;
+          z-index: -1;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .main-text {
+        width: 50%;
+        height: auto;
+        padding: 0 1rem;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 2.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1rem;
+          color: $gris;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: auto;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 5rem 2rem;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 2.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          font-size: .83rem;
+          color: $gris;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: $gris-claro;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        width: 80%;
+        figure{
+          margin: 0;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    display: none;
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+
+      .main-imagenes {
+        display: none;
+      }
+
+      .main-text {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 2.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1rem;
+          color: $gris;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.3s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: auto;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 3rem 1rem;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 2.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          font-size: .83rem;
+          color: $gris;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: $gris-claro;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        figure{
+          margin: 0;
+          img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    display: none;
+  }
+
+  section.bienvenido {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+
+    .container-bienvenidos {
+      width: 100%;
+      height: 100%;
+
+      .main-imagenes {
+        display: none;
+      }
+
+      .main-text {
+        width: 100%;
+        height: auto;
+        padding: 0 1rem;
+
+        h3 {
+          margin: 0;
+          font-family: $goodvibes;
+          font-size: 2.7rem;
+          color: $oliva;
+        }
+
+        h2 {
+          font-family: $pontano;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+        }
+
+        .texto-principal {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1.15rem;
+          margin-bottom: 1rem;
+        }
+
+        .info-texto {
+          font-family: $montserrat;
+          margin: 0;
+          font-size: 1rem;
+          color: $gris;
+        }
+
+        .btn-nosotros {
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button {
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $oscuro;
+
+            &::after {
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color: $oscuro;
+              top: calc(50% - 17px);
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.info-menu{
+    width: 100%;
+    height: auto;
+    background-color: $negro;
+
+    .main-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .info-box{
+        width: 100%;
+        height: auto;
+        background-color: $negro;
+        padding: 3rem 1rem;
+
+        h3{
+          margin: 0;
+          font-family: "Great Vibes", cursive;
+          font-size: 2.7rem;
+          color: #999966;
+        }
+
+        h2{
+          font-family: "Pontano Sans", sans-serif;
+          text-transform: uppercase;
+          font-weight: 800;
+          margin-bottom: 1rem;
+          color: $blanco;
+        }
+
+        .texto-principal, .texto-secundario{
+          font-family: "Montserrat", sans-serif;
+          margin: 0;
+          font-size: .83rem;
+          color: $gris;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: $gris-claro;
+        }
+        
+        .texto-secundario{
+          margin-top: 1rem;
+        }
+
+        .btn-nosotros{
+          width: 100%;
+          height: auto;
+          position: relative;
+
+          button{
+            margin: 2rem 0 2rem 1rem;
+            border: unset;
+            background: unset;
+            cursor: pointer;
+            -webkit-transition: 0.5s all ease-in-out;
+            transition: 0.5s all ease-in-out;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: $blanco;
+
+            &::after{
+              content: "";
+              height: 2rem;
+              width: 2px;
+              position: absolute;
+              left: 0;
+              background-color:$blanco;
+              top: calc(50% - 17px);
+              -webkit-transition: 0.5s all ease-in-out;
+              transition: 0.5s all ease-in-out;
+            }
+
+            &:hover {
+              color: $oro;
+
+              &::after {
+                background-color: $oro;
+              }
+            }
+          }
+        }
+      }
+
+      .main-img{
+        figure{
+          margin: 0;
+          img{
+            width: 100%;
+            height: 385px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
