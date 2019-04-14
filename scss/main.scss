@@ -310,15 +310,10 @@ section.bienvenido {
   height: 100vh;
 }
 
-
-
 @media (min-width: 1921px) {
-
-  header{
-
-    .menu{
-
-      .div-logo{
+  header {
+    .menu {
+      .div-logo {
         padding-left: 5%;
       }
     }
@@ -447,18 +442,18 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: 100vh;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
@@ -467,23 +462,24 @@ section.bienvenido {
         flex-direction: column;
         justify-content: center;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 6.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
           margin-bottom: 1rem;
-          font-size:3.1rem;
+          font-size: 3.1rem;
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-weight: 400;
@@ -491,17 +487,17 @@ section.bienvenido {
           font-size: 1.5rem;
           line-height: 3rem;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -514,13 +510,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -537,12 +533,12 @@ section.bienvenido {
         }
       }
 
-      .main-img{
+      .main-img {
         width: 80%;
-        figure{
+        figure {
           margin: 0;
           height: 100%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -554,12 +550,9 @@ section.bienvenido {
 }
 
 @media (min-width: 1601px) and (max-width: 1920px) {
-
-  header{
-
-    .menu{
-
-      .div-logo{
+  header {
+    .menu {
+      .div-logo {
         padding-left: 5%;
       }
     }
@@ -684,18 +677,18 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: 100vh;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
@@ -704,14 +697,14 @@ section.bienvenido {
         flex-direction: column;
         justify-content: center;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 4.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -720,7 +713,8 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           color: $gris;
@@ -729,17 +723,17 @@ section.bienvenido {
           color: $gris-claro;
           line-height: 2.1rem;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -752,13 +746,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -775,12 +769,12 @@ section.bienvenido {
         }
       }
 
-      .main-img{
+      .main-img {
         width: 80%;
-        figure{
+        figure {
           margin: 0;
           height: 100%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -792,12 +786,9 @@ section.bienvenido {
 }
 
 @media (min-width: 1441px) and (max-width: 1600px) {
-
-  header{
-
-    .menu{
-
-      .div-logo{
+  header {
+    .menu {
+      .div-logo {
         padding-left: 5%;
       }
     }
@@ -894,7 +885,7 @@ section.bienvenido {
             transition: 0.3s all ease-in-out;
             text-transform: uppercase;
             font-family: $montserrat;
-            font-size: .8rem;
+            font-size: 0.8rem;
             font-weight: 900;
             color: $oscuro;
 
@@ -922,18 +913,18 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: 100vh;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
@@ -942,14 +933,14 @@ section.bienvenido {
         flex-direction: column;
         justify-content: center;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 4.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -958,7 +949,8 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           color: $gris;
@@ -967,17 +959,17 @@ section.bienvenido {
           color: $gris-claro;
           line-height: 1.8rem;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -986,17 +978,17 @@ section.bienvenido {
             transition: 0.5s all ease-in-out;
             text-transform: uppercase;
             font-family: "Montserrat", sans-serif;
-            font-size: .8rem;
+            font-size: 0.8rem;
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -1013,12 +1005,12 @@ section.bienvenido {
         }
       }
 
-      .main-img{
+      .main-img {
         width: 80%;
-        figure{
+        figure {
           margin: 0;
           height: 100%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1030,12 +1022,9 @@ section.bienvenido {
 }
 
 @media (min-width: 1201px) and (max-width: 1440px) {
-
-  header{
-
-    .menu{
-
-      .div-logo{
+  header {
+    .menu {
+      .div-logo {
         padding-left: 5%;
       }
     }
@@ -1160,18 +1149,18 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: 100vh;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
@@ -1180,14 +1169,14 @@ section.bienvenido {
         flex-direction: column;
         justify-content: center;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 4.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -1196,7 +1185,8 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           color: $gris;
@@ -1205,17 +1195,17 @@ section.bienvenido {
           color: $gris-claro;
           line-height: 2.1rem;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -1228,13 +1218,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -1251,12 +1241,12 @@ section.bienvenido {
         }
       }
 
-      .main-img{
+      .main-img {
         width: 80%;
-        figure{
+        figure {
           margin: 0;
           height: 100%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1386,18 +1376,18 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: 100vh;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
@@ -1406,14 +1396,14 @@ section.bienvenido {
         flex-direction: column;
         justify-content: center;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -1421,7 +1411,8 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1rem;
@@ -1429,17 +1420,17 @@ section.bienvenido {
           line-height: 1.5rem;
           color: $gris-claro;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -1452,13 +1443,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -1475,12 +1466,12 @@ section.bienvenido {
         }
       }
 
-      .main-img{
+      .main-img {
         width: 80%;
-        figure{
+        figure {
           margin: 0;
           height: 100%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1608,31 +1599,31 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: auto;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
         padding: 5rem 2rem;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -1640,26 +1631,27 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: .83rem;
+          font-size: 0.83rem;
           color: $gris;
           font-weight: 400;
           line-height: 1.5rem;
           color: $gris-claro;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -1672,13 +1664,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -1695,12 +1687,12 @@ section.bienvenido {
         }
       }
 
-      .main-img{
+      .main-img {
         width: 80%;
-        figure{
+        figure {
           margin: 0;
           height: 100%;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1803,31 +1795,31 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: auto;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
         padding: 3rem 1rem;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -1835,26 +1827,27 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: .83rem;
+          font-size: 0.83rem;
           color: $gris;
           font-weight: 400;
           line-height: 1.5rem;
           color: $gris-claro;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -1867,13 +1860,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -1890,10 +1883,10 @@ section.bienvenido {
         }
       }
 
-      .main-img{
-        figure{
+      .main-img {
+        figure {
           margin: 0;
-          img{
+          img {
             width: 100%;
             height: 500px;
             object-fit: cover;
@@ -1996,31 +1989,31 @@ section.bienvenido {
     }
   }
 
-  section.info-menu{
+  section.info-menu {
     width: 100%;
     height: auto;
     background-color: $negro;
 
-    .main-container{
+    .main-container {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
 
-      .info-box{
+      .info-box {
         width: 100%;
         height: auto;
         background-color: $negro;
         padding: 3rem 1rem;
 
-        h3{
+        h3 {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
         }
 
-        h2{
+        h2 {
           font-family: "Pontano Sans", sans-serif;
           text-transform: uppercase;
           font-weight: 800;
@@ -2028,26 +2021,27 @@ section.bienvenido {
           color: $blanco;
         }
 
-        .texto-principal, .texto-secundario{
+        .texto-principal,
+        .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: .83rem;
+          font-size: 0.83rem;
           color: $gris;
           font-weight: 400;
           line-height: 1.5rem;
           color: $gris-claro;
         }
-        
-        .texto-secundario{
+
+        .texto-secundario {
           margin-top: 1rem;
         }
 
-        .btn-nosotros{
+        .btn-nosotros {
           width: 100%;
           height: auto;
           position: relative;
 
-          button{
+          button {
             margin: 2rem 0 2rem 1rem;
             border: unset;
             background: unset;
@@ -2060,13 +2054,13 @@ section.bienvenido {
             font-weight: 900;
             color: $blanco;
 
-            &::after{
+            &::after {
               content: "";
               height: 2rem;
               width: 2px;
               position: absolute;
               left: 0;
-              background-color:$blanco;
+              background-color: $blanco;
               top: calc(50% - 17px);
               -webkit-transition: 0.5s all ease-in-out;
               transition: 0.5s all ease-in-out;
@@ -2083,10 +2077,10 @@ section.bienvenido {
         }
       }
 
-      .main-img{
-        figure{
+      .main-img {
+        figure {
           margin: 0;
-          img{
+          img {
             width: 100%;
             height: 385px;
             object-fit: cover;

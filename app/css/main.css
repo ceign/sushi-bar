@@ -458,7 +458,8 @@ section.bienvenido {
           margin-bottom: 1rem;
           font-size: 3.1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-weight: 400;
@@ -652,7 +653,8 @@ section.bienvenido {
           margin-bottom: 1rem;
           font-size: 2.1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           color: #585858;
@@ -789,7 +791,7 @@ section.bienvenido {
             transition: 0.3s all ease-in-out;
             text-transform: uppercase;
             font-family: "Montserrat", sans-serif;
-            font-size: .8rem;
+            font-size: 0.8rem;
             font-weight: 900;
             color: rgba(25, 25, 25, 0.843); }
             section.bienvenido .container-bienvenidos .main-text .btn-nosotros button::after {
@@ -847,7 +849,8 @@ section.bienvenido {
           margin-bottom: 1rem;
           font-size: 2.1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           color: #585858;
@@ -870,7 +873,7 @@ section.bienvenido {
             transition: 0.5s all ease-in-out;
             text-transform: uppercase;
             font-family: "Montserrat", sans-serif;
-            font-size: .8rem;
+            font-size: 0.8rem;
             font-weight: 900;
             color: #fff; }
             section.info-menu .main-container .info-box .btn-nosotros button::after {
@@ -1042,7 +1045,8 @@ section.bienvenido {
           margin-bottom: 1rem;
           font-size: 2.1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           color: #585858;
@@ -1231,7 +1235,8 @@ section.bienvenido {
           font-weight: 800;
           margin-bottom: 1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1rem;
@@ -1399,10 +1404,11 @@ section.bienvenido {
           font-weight: 800;
           margin-bottom: 1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: .83rem;
+          font-size: 0.83rem;
           color: #585858;
           font-weight: 400;
           line-height: 1.5rem;
@@ -1546,10 +1552,11 @@ section.bienvenido {
           font-weight: 800;
           margin-bottom: 1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: .83rem;
+          font-size: 0.83rem;
           color: #585858;
           font-weight: 400;
           line-height: 1.5rem;
@@ -1690,10 +1697,11 @@ section.bienvenido {
           font-weight: 800;
           margin-bottom: 1rem;
           color: #fff; }
-        section.info-menu .main-container .info-box .texto-principal, section.info-menu .main-container .info-box .texto-secundario {
+        section.info-menu .main-container .info-box .texto-principal,
+        section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: .83rem;
+          font-size: 0.83rem;
           color: #585858;
           font-weight: 400;
           line-height: 1.5rem;
