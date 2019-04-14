@@ -1,0 +1,17 @@
+@keyframes bouncing {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: 0;
+  }
+  75% {
+    top: 10px;
+  }
+  100% {
+    top: 0;
+  }
+}
