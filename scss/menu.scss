@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
+
+@import "./modules/_variables";
+@import "./modules/keyframes";
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 150px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    .div-logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      padding: 0;
+
+      .logo {
+        width: 185px;
+
+        img {
+          width: 100%;
+        }
+
+        img:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .div-nav {
+      padding: 0;
+
+      .main-menu {
+        height: 100%;
+
+        ul {
+          margin: 0;
+          height: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+
+          li {
+            letter-spacing: 2px;
+
+            a {
+              text-decoration: unset;
+
+              span {
+                text-transform: uppercase;
+                font-size: 0.69rem;
+                font-family: $montserrat;
+                font-weight: 600;
+                color: #fff;
+              }
+            }
+
+            /* Underline From Center */
+            .hvr-underline-from-center {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: perspective(1px) translateZ(0);
+              transform: perspective(1px) translateZ(0);
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+              position: relative;
+              overflow: hidden;
+            }
+            .hvr-underline-from-center:before {
+              content: "";
+              position: absolute;
+              z-index: -1;
+              left: 51%;
+              right: 51%;
+              bottom: 0;
+              background: #fff;
+              height: 2px;
+              -webkit-transition-property: left, right;
+              transition-property: left, right;
+              -webkit-transition-duration: 0.3s;
+              transition-duration: 0.4s;
+              -webkit-transition-timing-function: ease-out;
+              transition-timing-function: ease-out;
+            }
+            .hvr-underline-from-center:hover:before,
+            .hvr-underline-from-center:focus:before,
+            .hvr-underline-from-center:active:before {
+              left: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .info-contacto {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+
+      .opciones-contacto {
+        border: 1px solid $oro dotted;
+
+        .num-whatsapp {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 0.3rem;
+          position: relative;
+
+          .fa-whatsapp {
+            color: #25d366;
+            position: absolute;
+            left: 10%;
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 0.79rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .num-fijo {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 0.3rem;
+          position: relative;
+
+          .fa-phone-volume {
+            color: white;
+            position: absolute;
+            left: 10%;
+            color: rgb(42, 158, 208);
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 0.79rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .direccion {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          padding: 0.3rem;
+          position: relative;
+
+          .fa-map-marker-alt {
+            color: white;
+            position: absolute;
+            left: 10%;
+            color: rgb(209, 197, 30);
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 0.79rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.bg-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/hero-carta.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: $oro;
+    text-transform: uppercase;
+    font-family: $montserrat;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+    color: $blanco;
+    font-family: $goodvibes;
+    font-size: 5.5rem;
+    letter-spacing: 6px;
+  }
+
+  .arrow {
+    width: 60px;
+    height: 40px;
+    position: relative;
+    animation-name: bouncing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 5rem;
+
+      span:first-child {
+        width: 3px;
+        height: 30px;
+        background-color: $blanco;
+        position: absolute;
+        left: 19px;
+        bottom: 0;
+        transform: rotate(-40deg);
+        border-radius: 5px;
+      }
+
+      span:last-child {
+        width: 3px;
+        height: 30px;
+        background-color: $blanco;
+        position: absolute;
+        right: 19px;
+        bottom: 0;
+        transform: rotate(40deg);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+
+  section.bg-hero {
+    //border: 3px solid blue;
+
+    .main-info {
+      //border: 1px solid yellow;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    display: none;
+  }
+
+  section.bg-hero {
+    //border: 3px solid blue;
+
+    .main-info {
+      //border: 1px solid yellow;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    display: none;
+  }
+
+  section.bg-hero {
+    //border: 3px solid blue;
+
+    .main-info {
+      //border: 1px solid yellow;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    //border: 3px solid green;
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+      //border: 1px solid red;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+
+        .img-box {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+            //border: 1px solid blue;
+
+            h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+            //border: 1px solid red;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            
+            //border: 1px solid blue;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 2rem 0;
+            justify-content: space-between;
+
+            .button-phone {
+              width: 45%;
+              //border: 1px solid green;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $phone;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+
+            .button-wssp {
+              width: 45%;
+              //border: 1px solid red;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                  font-size: 1.4rem;
+                  color: $blanco;
+                  width: 100%;
+                  text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
