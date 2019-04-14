@@ -13,3 +13,6 @@ var swiper = new Swiper('.swiper-container', {
     }
   });
 
+
+  console.log(screen.width);
+
