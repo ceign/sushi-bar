@@ -208,181 +208,79 @@ section.bg-hero {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
 
-.main-info {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .main-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: $oro;
-    text-transform: uppercase;
-    font-family: $montserrat;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+    h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: $oro;
+      text-transform: uppercase;
+      font-family: $montserrat;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
 
-  h1 {
-    margin: 0;
-    color: $blanco;
-    font-family: $goodvibes;
-    font-size: 5.5rem;
-    letter-spacing: 6px;
-  }
+    h1 {
+      margin: 0;
+      color: $blanco;
+      font-family: $goodvibes;
+      font-size: 5.5rem;
+      letter-spacing: 6px;
+    }
 
-  .arrow {
-    width: 60px;
-    height: 40px;
-    position: relative;
-    animation-name: bouncing;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    .arrow {
+      width: 60px;
+      height: 40px;
+      position: relative;
+      animation-name: bouncing;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
 
-    a {
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      top: 5rem;
-
-      span:first-child {
-        width: 3px;
-        height: 30px;
-        background-color: $blanco;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
         position: absolute;
-        left: 19px;
-        bottom: 0;
-        transform: rotate(-40deg);
-        border-radius: 5px;
-      }
+        top: 5rem;
 
-      span:last-child {
-        width: 3px;
-        height: 30px;
-        background-color: $blanco;
-        position: absolute;
-        right: 19px;
-        bottom: 0;
-        transform: rotate(40deg);
-        border-radius: 5px;
+        span:first-child {
+          width: 3px;
+          height: 30px;
+          background-color: $blanco;
+          position: absolute;
+          left: 19px;
+          bottom: 0;
+          transform: rotate(-40deg);
+          border-radius: 5px;
+        }
+
+        span:last-child {
+          width: 3px;
+          height: 30px;
+          background-color: $blanco;
+          position: absolute;
+          right: 19px;
+          bottom: 0;
+          transform: rotate(40deg);
+          border-radius: 5px;
+        }
       }
     }
   }
 }
 
 @media (min-width: 1921px) {
-}
-
-@media (min-width: 1601px) and (max-width: 1920px) {
-}
-
-@media (min-width: 1441px) and (max-width: 1600px) {
-}
-
-@media (min-width: 1201px) and (max-width: 1440px) {
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  header {
-    display: none;
-  }
-
   section.bg-hero {
-    //border: 3px solid blue;
-
     .main-info {
-      //border: 1px solid yellow;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h3 {
-        margin: 0;
-        font-size: 1.3rem;
-        color: $oro;
-        text-transform: uppercase;
-        font-family: $montserrat;
-        font-weight: 600;
-        letter-spacing: 2px;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-      }
-
-      h1 {
-        margin: 0;
-        color: $blanco;
-        font-family: $goodvibes;
-        font-size: 5.5rem;
-        letter-spacing: 6px;
-      }
-    }
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  header {
-    display: none;
-  }
-
-  section.bg-hero {
-    //border: 3px solid blue;
-
-    .main-info {
-      //border: 1px solid yellow;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h3 {
-        margin: 0;
-        font-size: 1.3rem;
-        color: $oro;
-        text-transform: uppercase;
-        font-family: $montserrat;
-        font-weight: 600;
-        letter-spacing: 2px;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-      }
-
-      h1 {
-        margin: 0;
-        color: $blanco;
-        font-family: $goodvibes;
-        font-size: 5.5rem;
-        letter-spacing: 6px;
-      }
-    }
-  }
-}
-
-@media (max-width: 575.98px) {
-  header {
-    display: none;
-  }
-
-  section.bg-hero {
-    //border: 3px solid blue;
-
-    .main-info {
-      //border: 1px solid yellow;
       width: 100%;
       height: 100%;
       display: flex;
@@ -413,21 +311,2812 @@ section.bg-hero {
   }
 
   section.main-carta {
-    //border: 3px solid green;
     width: 100%;
     height: auto;
 
     .container-cartas {
       width: 100%;
       height: 100%;
-      //border: 1px solid red;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 5rem;
+          margin: auto;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+
+            h5 {
+              margin: 0;
+              font-size: 6.7rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 3.1rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 2.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 1.9rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 1.6rem;
+                      line-height: 22px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 3rem 0;
+            justify-content: space-between;
+            justify-content: center;
+
+            .button-phone {
+              display: none;
+            }
+
+            .button-wssp {
+              width: 35%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 2.5rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size:2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 0;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 5rem;
+          margin: auto;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+
+            h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 1.1rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 1rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 3rem 0;
+            justify-content: space-between;
+            justify-content: center;
+
+            .button-phone {
+              display: none;
+            }
+
+            .button-wssp {
+              width: 35%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.5rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 0;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+
+            h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 1.1rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 1rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 3rem 0;
+            justify-content: space-between;
+            justify-content: center;
+
+            .button-phone {
+              display: none;
+            }
+
+            .button-wssp {
+              width: 35%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.5rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+
+            h5 {
+              margin: 0;
+              font-size: 4rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 1.2rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 1.1rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 3rem 0 2rem 0;
+            justify-content: space-between;
+            justify-content: center;
+
+            .button-phone {
+              display: none;
+            }
+
+            .button-wssp {
+              width: 45%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.8rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 0;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+
+            h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 2rem 0;
+            justify-content: space-between;
+            justify-content: center;
+
+            .button-phone {
+              display: none;
+            }
+
+            .button-wssp {
+              width: 45%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+            //border: 1px solid blue;
+
+            h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+            //border: 1px solid red;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            //border: 1px solid blue;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 2rem 0;
+            justify-content: space-between;
+
+            .button-phone {
+              width: 45%;
+              //border: 1px solid green;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $phone;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+
+            .button-wssp {
+              width: 45%;
+              //border: 1px solid red;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    display: none;
+  }
+
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
 
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
 
-        .img-box {
+        .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .texto-box {
+          width: 100%;
+          height: 100%;
+
+          .container-texto {
+            width: 100%;
+            height: 100%;
+
+            h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: $goodvibes;
+              color: $oro;
+              text-align: center;
+              padding-top: 2rem;
+            }
+
+            h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: $pontano;
+              font-weight: 800;
+              font-size: 1.8rem;
+            }
+
+            .personas {
+              margin: 0;
+              font-family: $pontano;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem;
+            }
+          }
+
+          .container-producto {
+            width: 100%;
+            height: auto;
+
+            ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              li {
+                margin-bottom: 2.5rem;
+                .detalles {
+                  .producto {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+
+                    h4 {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      font-family: $montserrat;
+                      text-transform: uppercase;
+                      display: inline-block;
+                      font-weight: 900;
+                      &:last-child {
+                        color: $oro;
+                      }
+                    }
+                  }
+
+                  .ingredientes {
+                    p {
+                      margin: 0;
+                      font-size: 0.9rem;
+                      line-height: 18px;
+                      font-family: $pontano;
+                      color: $gris;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+
+          .container-buttons {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 2rem 0;
+            justify-content: space-between;
+
+            .button-phone {
+              width: 45%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $phone;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+
+            .button-wssp {
+              width: 45%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $wssp;
+              border-radius: 3px;
+
+              a {
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  header {
+    display: none;
+  }
+
+  section.bg-hero {
+    .main-info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $oro;
+        text-transform: uppercase;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: $blanco;
+        font-family: $goodvibes;
+        font-size: 5.5rem;
+        letter-spacing: 6px;
+      }
+    }
+  }
+
+  section.main-carta {
+    width: 100%;
+    height: auto;
+
+    .container-cartas {
+      width: 100%;
+      height: 100%;
+
+      .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+
+        .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
           width: 100%;
@@ -520,7 +3209,6 @@ section.bg-hero {
           .container-producto {
             width: 100%;
             height: auto;
-            //border: 1px solid red;
 
             ul {
               margin: 0;
@@ -569,8 +3257,6 @@ section.bg-hero {
           }
 
           .container-buttons {
-            
-            //border: 1px solid blue;
             width: 100%;
             height: auto;
             display: flex;
@@ -579,7 +3265,6 @@ section.bg-hero {
 
             .button-phone {
               width: 45%;
-              //border: 1px solid green;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -604,11 +3289,170 @@ section.bg-hero {
               border-radius: 3px;
 
               a {
-                  font-size: 1.4rem;
-                  color: $blanco;
-                  width: 100%;
-                  text-align: center;
+                font-size: 1.4rem;
+                color: $blanco;
+                width: 100%;
+                text-align: center;
               }
+            }
+          }
+        }
+
+        .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+            }
+          }
+        }
+
+        .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px;
+
+          .texto {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+              color: $blanco;
+              margin: 0;
+              font-family: $montserrat;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px $negro;
+              text-transform: uppercase;
+              text-align: center;
+            }
+
+            .texto-cantidad {
+              margin: 1rem 0;
+              color: $blanco;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px $negro;
+            }
+
+            .texto-ingredientes {
+              color: $blanco;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
+              margin-bottom: 1rem;
+            }
+
+            .texto-precio {
+              color: $price;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px $negro;
             }
           }
         }

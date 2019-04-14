@@ -226,75 +226,1917 @@ section.bg-hero {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+    section.bg-hero .main-info .arrow {
+      width: 60px;
+      height: 40px;
+      position: relative;
+      -webkit-animation-name: bouncing;
+              animation-name: bouncing;
+      -webkit-animation-duration: 4s;
+              animation-duration: 4s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite; }
+      section.bg-hero .main-info .arrow a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 5rem; }
+        section.bg-hero .main-info .arrow a span:first-child {
+          width: 3px;
+          height: 30px;
+          background-color: #fff;
+          position: absolute;
+          left: 19px;
+          bottom: 0;
+          -webkit-transform: rotate(-40deg);
+                  transform: rotate(-40deg);
+          border-radius: 5px; }
+        section.bg-hero .main-info .arrow a span:last-child {
+          width: 3px;
+          height: 30px;
+          background-color: #fff;
+          position: absolute;
+          right: 19px;
+          bottom: 0;
+          -webkit-transform: rotate(40deg);
+                  transform: rotate(40deg);
+          border-radius: 5px; }
 
-.main-info {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .main-info h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #a9910c;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
-  .main-info h1 {
-    margin: 0;
-    color: #fff;
-    font-family: "Great Vibes", cursive;
-    font-size: 5.5rem;
-    letter-spacing: 6px; }
-  .main-info .arrow {
-    width: 60px;
-    height: 40px;
-    position: relative;
-    -webkit-animation-name: bouncing;
-            animation-name: bouncing;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite; }
-    .main-info .arrow a {
+@media (min-width: 1921px) {
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
+      width: 100%;
+      height: 100%; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        section.main-carta .container-cartas .wrapper-carta:nth-child(2n + 1) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 5rem;
+          margin: auto; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 6.7rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 3.1rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 2.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 1.9rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 1.6rem;
+                  line-height: 22px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 3rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              display: none; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 35%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 2.5rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 2rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 3rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 3rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
       width: 100%;
       height: 100%;
-      display: block;
-      position: absolute;
-      top: 5rem; }
-      .main-info .arrow a span:first-child {
-        width: 3px;
-        height: 30px;
-        background-color: #fff;
-        position: absolute;
-        left: 19px;
-        bottom: 0;
-        -webkit-transform: rotate(-40deg);
-                transform: rotate(-40deg);
-        border-radius: 5px; }
-      .main-info .arrow a span:last-child {
-        width: 3px;
-        height: 30px;
-        background-color: #fff;
-        position: absolute;
-        right: 19px;
-        bottom: 0;
-        -webkit-transform: rotate(40deg);
-                transform: rotate(40deg);
-        border-radius: 5px; }
+      padding: 2rem 0; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        section.main-carta .container-cartas .wrapper-carta:nth-child(2n + 1) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 5rem;
+          margin: auto; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 1.8rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 1.1rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 1rem;
+                  line-height: 18px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 3rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              display: none; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 35%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 1.5rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 0; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        section.main-carta .container-cartas .wrapper-carta:nth-child(2n + 1) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 1.8rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 1.1rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 1rem;
+                  line-height: 18px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 3rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              display: none; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 35%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 1.5rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
+      width: 100%;
+      height: 100%; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        section.main-carta .container-cartas .wrapper-carta:nth-child(2n + 1) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 4rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 1.8rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 1.2rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 1.1rem;
+                  line-height: 18px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 3rem 0 2rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              display: none; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 45%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 1.8rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 0; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        section.main-carta .container-cartas .wrapper-carta:nth-child(2n + 1) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 1.8rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 0.9rem;
+                  line-height: 18px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 2rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              display: none; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 45%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 1.4rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
@@ -330,45 +2172,356 @@ section.bg-hero {
       color: #fff;
       font-family: "Great Vibes", cursive;
       font-size: 5.5rem;
-      letter-spacing: 6px; } }
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
+      width: 100%;
+      height: 100%; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        section.main-carta .container-cartas .wrapper-carta:nth-child(2n + 1) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%;
+          padding: 0 1rem;
+          margin: auto; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 1.8rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 0.9rem;
+                  line-height: 18px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 2rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              width: 45%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #5ed4f5;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone a {
+                font-size: 1.4rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 45%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 1.4rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: auto;
+          min-height: 700px;
+          margin: 0 1rem; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          min-height: 700px;
+          height: auto; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  header {
-    display: none; }
-  section.bg-hero .main-info {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    section.bg-hero .main-info h3 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: #a9910c;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      letter-spacing: 2px;
-      margin-top: 1rem;
-      margin-bottom: 2rem; }
-    section.bg-hero .main-info h1 {
-      margin: 0;
-      color: #fff;
-      font-family: "Great Vibes", cursive;
-      font-size: 5.5rem;
-      letter-spacing: 6px; } }
-
-@media (max-width: 575.98px) {
   header {
     display: none; }
   section.bg-hero .main-info {
@@ -413,12 +2566,13 @@ section.bg-hero {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem; }
-        section.main-carta .container-cartas .wrapper-carta .img-box {
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
+          background-position: center;
           width: 100%;
           height: 700px; }
-          section.main-carta .container-cartas .wrapper-carta .img-box .texto {
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
             height: 100%;
             width: 100%;
             display: -webkit-box;
@@ -434,7 +2588,7 @@ section.bg-hero {
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center; }
-            section.main-carta .container-cartas .wrapper-carta .img-box .texto h2 {
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
               color: #fff;
               margin: 0;
               font-family: "Montserrat", sans-serif;
@@ -443,21 +2597,21 @@ section.bg-hero {
               text-shadow: 1px 1px 10px #16191e;
               text-transform: uppercase;
               text-align: center; }
-            section.main-carta .container-cartas .wrapper-carta .img-box .texto .texto-cantidad {
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
               margin: 1rem 0;
               color: #fff;
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
               text-shadow: 1px 1px 10px #16191e; }
-            section.main-carta .container-cartas .wrapper-carta .img-box .texto .texto-ingredientes {
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
               text-shadow: 1px 1px 10px #16191e;
               margin-bottom: 1rem; }
-            section.main-carta .container-cartas .wrapper-carta .img-box .texto .texto-precio {
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
@@ -575,4 +2729,516 @@ section.bg-hero {
                 font-size: 1.4rem;
                 color: #fff;
                 width: 100%;
-                text-align: center; } }
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
+
+@media (max-width: 575.98px) {
+  header {
+    display: none; }
+  section.bg-hero .main-info {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.bg-hero .main-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #a9910c;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    section.bg-hero .main-info h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "Great Vibes", cursive;
+      font-size: 5.5rem;
+      letter-spacing: 6px; }
+  section.main-carta {
+    width: 100%;
+    height: auto; }
+    section.main-carta .container-cartas {
+      width: 100%;
+      height: 100%; }
+      section.main-carta .container-cartas .wrapper-carta {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-60 {
+          background-image: url("/img/carta1.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .texto-box {
+          width: 100%;
+          height: 100%; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto {
+            width: 100%;
+            height: 100%; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h5 {
+              margin: 0;
+              font-size: 3rem;
+              font-family: "Great Vibes", cursive;
+              color: #a9910c;
+              text-align: center;
+              padding-top: 2rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto h3 {
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "Pontano Sans", sans-serif;
+              font-weight: 800;
+              font-size: 1.8rem; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-texto .personas {
+              margin: 0;
+              font-family: "Pontano Sans", sans-serif;
+              text-align: center;
+              font-weight: 900;
+              font-size: 1.1rem;
+              padding-bottom: 2rem; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto {
+            width: 100%;
+            height: auto; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul {
+              margin: 0;
+              list-style: none;
+              width: 100%;
+              height: 100%; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li {
+                margin-bottom: 2.5rem; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: row;
+                          flex-direction: row;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
+                  margin: 0.5rem 0; }
+                  section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4 {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    font-family: "Montserrat", sans-serif;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    font-weight: 900; }
+                    section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .producto h4:last-child {
+                      color: #a9910c; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li .detalles .ingredientes p {
+                  margin: 0;
+                  font-size: 0.9rem;
+                  line-height: 18px;
+                  font-family: "Pontano Sans", sans-serif;
+                  color: #585858;
+                  font-weight: 600; }
+                section.main-carta .container-cartas .wrapper-carta .texto-box .container-producto ul li:last-child {
+                  margin-bottom: 0; }
+          section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons {
+            width: 100%;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 2rem 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone {
+              width: 45%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #5ed4f5;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-phone a {
+                font-size: 1.4rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp {
+              width: 45%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background-color: #25D366;
+              border-radius: 3px; }
+              section.main-carta .container-cartas .wrapper-carta .texto-box .container-buttons .button-wssp a {
+                font-size: 1.4rem;
+                color: #fff;
+                width: 100%;
+                text-align: center; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-40 {
+          background-image: url("/img/carta2.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-30 {
+          background-image: url("/img/carta3.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; }
+        section.main-carta .container-cartas .wrapper-carta .img-box-24 {
+          background-image: url("/img/carta4.jpg");
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 700px; }
+          section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto {
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto h2 {
+              color: #fff;
+              margin: 0;
+              font-family: "Montserrat", sans-serif;
+              font-size: 1.5rem;
+              font-weight: 900;
+              text-shadow: 1px 1px 10px #16191e;
+              text-transform: uppercase;
+              text-align: center; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
+              margin: 1rem 0;
+              color: #fff;
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 700;
+              text-shadow: 1px 1px 10px #16191e; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
+              color: #fff;
+              text-align: center;
+              margin: 0;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e;
+              margin-bottom: 1rem; }
+            section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
+              color: #ffcc66;
+              margin: 0;
+              font-size: 2rem;
+              font-weight: 600;
+              text-shadow: 1px 1px 10px #16191e; } }
