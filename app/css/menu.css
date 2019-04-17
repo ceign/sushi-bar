@@ -33,192 +33,10 @@
 body {
   background-color: white; }
 
+/*
 header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 150px;
-  padding: 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  header .row {
-    width: 100%;
-    height: 100%;
-    margin: 0; }
-    header .row .div-logo {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: left;
-          -ms-flex-pack: left;
-              justify-content: left;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 0; }
-      header .row .div-logo .logo {
-        width: 185px; }
-        header .row .div-logo .logo img {
-          width: 100%; }
-        header .row .div-logo .logo img:focus {
-          outline: none; }
-    header .row .div-nav {
-      padding: 0; }
-      header .row .div-nav .main-menu {
-        height: 100%; }
-        header .row .div-nav .main-menu ul {
-          margin: 0;
-          height: 100%;
-          list-style: none;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: space-evenly;
-              -ms-flex-pack: space-evenly;
-                  justify-content: space-evenly; }
-          header .row .div-nav .main-menu ul li {
-            letter-spacing: 2px;
-            /* Underline From Center */ }
-            header .row .div-nav .main-menu ul li a {
-              text-decoration: unset; }
-              header .row .div-nav .main-menu ul li a span {
-                text-transform: uppercase;
-                font-size: 0.69rem;
-                font-family: "Montserrat", sans-serif;
-                font-weight: 600;
-                color: #fff; }
-            header .row .div-nav .main-menu ul li .hvr-underline-from-center {
-              display: inline-block;
-              vertical-align: middle;
-              -webkit-transform: perspective(1px) translateZ(0);
-              transform: perspective(1px) translateZ(0);
-              -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-              position: relative;
-              overflow: hidden; }
-            header .row .div-nav .main-menu ul li .hvr-underline-from-center:before {
-              content: "";
-              position: absolute;
-              z-index: -1;
-              left: 51%;
-              right: 51%;
-              bottom: 0;
-              background: #fff;
-              height: 2px;
-              -webkit-transition-property: left, right;
-              transition-property: left, right;
-              -webkit-transition-duration: 0.3s;
-              transition-duration: 0.4s;
-              -webkit-transition-timing-function: ease-out;
-              transition-timing-function: ease-out; }
-            header .row .div-nav .main-menu ul li .hvr-underline-from-center:hover:before,
-            header .row .div-nav .main-menu ul li .hvr-underline-from-center:focus:before,
-            header .row .div-nav .main-menu ul li .hvr-underline-from-center:active:before {
-              left: 0;
-              right: 0; }
-    header .row .info-contacto {
-      padding: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      opacity: 0; }
-      header .row .info-contacto .opciones-contacto {
-        border: 1px solid #a9910c dotted; }
-        header .row .info-contacto .opciones-contacto .num-whatsapp {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: space-evenly;
-              -ms-flex-pack: space-evenly;
-                  justify-content: space-evenly;
-          padding: 0.3rem;
-          position: relative; }
-          header .row .info-contacto .opciones-contacto .num-whatsapp .fa-whatsapp {
-            color: #25d366;
-            position: absolute;
-            left: 10%; }
-          header .row .info-contacto .opciones-contacto .num-whatsapp p {
-            margin: 0;
-            color: #fff;
-            font-family: "Montserrat", sans-serif;
-            font-size: 0.79rem;
-            letter-spacing: 1px; }
-        header .row .info-contacto .opciones-contacto .num-fijo {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: space-evenly;
-              -ms-flex-pack: space-evenly;
-                  justify-content: space-evenly;
-          padding: 0.3rem;
-          position: relative; }
-          header .row .info-contacto .opciones-contacto .num-fijo .fa-phone-volume {
-            color: white;
-            position: absolute;
-            left: 10%;
-            color: #2a9ed0; }
-          header .row .info-contacto .opciones-contacto .num-fijo p {
-            margin: 0;
-            color: #fff;
-            font-family: "Montserrat", sans-serif;
-            font-size: 0.79rem;
-            letter-spacing: 1px; }
-        header .row .info-contacto .opciones-contacto .direccion {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: space-evenly;
-              -ms-flex-pack: space-evenly;
-                  justify-content: space-evenly;
-          padding: 0.3rem;
-          position: relative; }
-          header .row .info-contacto .opciones-contacto .direccion .fa-map-marker-alt {
-            color: white;
-            position: absolute;
-            left: 10%;
-            color: #d1c51e; }
-          header .row .info-contacto .opciones-contacto .direccion p {
-            margin: 0;
-            color: #fff;
-            font-family: "Montserrat", sans-serif;
-            font-size: 0.79rem;
-            letter-spacing: 1px; }
-
+}
+*/
 section.bg-hero {
   width: 100%;
   height: 100vh;
@@ -2159,8 +1977,10 @@ section.bg-hero {
               text-shadow: 1px 1px 10px #16191e; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  /*
   header {
-    display: none; }
+  }
+  */
   section.bg-hero .main-info {
     width: 100%;
     height: 100%;
@@ -2542,8 +2362,10 @@ section.bg-hero {
               text-shadow: 1px 1px 10px #16191e; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  /*
   header {
-    display: none; }
+  }
+  */
   section.bg-hero .main-info {
     width: 100%;
     height: 100%;
@@ -2905,8 +2727,10 @@ section.bg-hero {
               text-shadow: 1px 1px 10px #16191e; } }
 
 @media (max-width: 575.98px) {
+  /*
   header {
-    display: none; }
+  }
+  */
   section.bg-hero .main-info {
     width: 100%;
     height: 100%;
