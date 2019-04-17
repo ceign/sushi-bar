@@ -14,5 +14,5 @@ var swiper = new Swiper('.swiper-container', {
   });
 
 
-  console.log(screen.width);
+  console.log(screen.width + 'x' + screen.height);
 
