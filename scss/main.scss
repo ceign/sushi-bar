@@ -310,6 +310,133 @@ section.bienvenido {
   height: 100vh;
 }
 
+section.galeria {
+  border: 1px solid red;
+  padding: 4rem 0;
+  .main-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 4rem 2rem;
+
+    h3 {
+      font-size: 4.7rem;
+      font-family: $goodvibes;
+      margin: 0;
+      color: $oliva;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      font-size: 2.1rem;
+      text-transform: uppercase;
+      font-family: $pontano;
+      color: $negro;
+    }
+
+    p {
+      margin: 0;
+      width: 50%;
+      text-align: center;
+      font-family: $montserrat;
+      font-size: 1.05rem;
+      color: $gris;
+      line-height: 2.1rem;
+    }
+  }
+
+  .wrapper-galeria {
+    border: 1px solid green;
+    .container-imgs {
+      border: 1px solid blue;
+      .top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        border: 2px solid black;
+        .imagen {
+          border: 1px solid rebeccapurple;
+          width: 30%;
+          height: 350px;
+          background-color: $gris;
+          cursor: pointer;
+          figure {
+            border: 1px solid;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+              border: 1px solid blue;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 0.8s ease 0s;
+              overflow: hidden;
+            }
+          }
+          &:hover {
+            figure {
+              img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        width: 100%;
+        height: auto;
+        display: flex;
+        border: 2px solid black;
+        .imagen {
+          border: 1px solid rebeccapurple;
+          width: 30%;
+          height: 350px;
+          background-color: $gris;
+          cursor: pointer;
+          figure {
+            border: 1px solid;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+              border: 1px solid blue;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 0.8s ease 0s;
+              overflow: hidden;
+            }
+          }
+          &:hover {
+            figure {
+              img {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1921px) {
   header {
     .menu {
