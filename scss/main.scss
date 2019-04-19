@@ -376,6 +376,71 @@ section.galeria {
   }
 }
 
+section.contacto {
+  padding: 4rem 0;
+  width: 100%;
+  height: auto;
+  .wrapper-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .first-box {
+      background-image: url('/img/contacto.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 600px;
+      address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0rem 1rem;
+        background-color: rgba(0, 0, 0, 0.4);
+        h2 {
+          font-style: normal;
+          color: $blanco;
+          font-size: 2.1rem;
+          font-family: $montserrat;
+          text-align: center;
+          text-shadow: 1px 1px 10px $negro;
+          margin-bottom: 2rem;
+          text-transform: uppercase;
+        }
+        p {
+          color: $blanco;
+          margin: 1.2rem 0;
+          text-align: center;
+          font-weight: 600;
+          font-size: 1rem;
+          font-family: $montserrat;
+          letter-spacing: 2px;
+          text-shadow: 1px 1px 10px $negro;
+        }
+        a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: $blanco;
+          font-family: $montserrat;
+          font-weight: 600;
+        }
+      }
+    }
+    .second-box {
+      width: 100%;
+      height: 600px;
+      background-color: $gris-claro;
+      .main-map {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
 @media (min-width: 1921px) {
   /*
   header {
@@ -438,6 +503,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 6.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -529,7 +595,8 @@ section.galeria {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 6.7rem;
-          color: #999966;
+          color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -616,6 +683,7 @@ section.galeria {
     .main-text {
       h3 {
         font-size: 6.7rem;
+        font-weight: 500;
       }
       h2 {
         font-size: 3.1rem;
@@ -697,6 +765,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 4.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -788,7 +857,8 @@ section.galeria {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 4.7rem;
-          color: #999966;
+          color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -873,6 +943,11 @@ section.galeria {
 
   section.galeria {
     padding: 4rem 0 6rem 0;
+    .main-text {
+      h3 {
+        font-weight: 500;
+      }
+    }
   }
 }
 
@@ -934,6 +1009,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 4.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1025,7 +1101,8 @@ section.galeria {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 4.7rem;
-          color: #999966;
+          color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1107,6 +1184,14 @@ section.galeria {
       }
     }
   }
+
+  section.galeria {
+    .main-text {
+      h3 {
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1440px) {
@@ -1167,6 +1252,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 4.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1258,7 +1344,8 @@ section.galeria {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 4.7rem;
-          color: #999966;
+          color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1340,6 +1427,14 @@ section.galeria {
       }
     }
   }
+
+  section.galeria {
+    .main-text {
+      h3 {
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -1398,6 +1493,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 2.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1486,7 +1582,8 @@ section.galeria {
           margin: 0;
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
-          color: #999966;
+          color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1573,9 +1670,10 @@ section.galeria {
       padding: 0 1rem 4rem 1rem;
       h3 {
         font-size: 2.7rem;
+        font-weight: 500;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
       }
       p {
@@ -1599,6 +1697,74 @@ section.galeria {
           .imagen {
             width: 50%;
           }
+        }
+      }
+    }
+  }
+
+  section.contacto {
+    border: 2px solid blue;
+    padding: 3rem 0;
+    width: 100%;
+    height: auto;
+    .wrapper-box {
+      border: 1px solid green;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      .first-box {
+        border: 1px solid red;
+        background-image: url('/img/contacto.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 415px;
+        address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          padding: 0rem 1rem;
+          background-color: rgba(0, 0, 0, 0.4);
+          h2 {
+            font-style: normal;
+            color: $blanco;
+            font-size: 2.1rem;
+            font-family: $montserrat;
+            text-align: center;
+            text-shadow: 1px 1px 10px $negro;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+          }
+          p {
+            color: $blanco;
+            margin: 1.2rem 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: $montserrat;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 10px $negro;
+          }
+          a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: $blanco;
+            font-family: $montserrat;
+            font-weight: 600;
+          }
+        }
+      }
+      .second-box {
+        border: 1px solid black;
+        width: 100%;
+        height: 415px;
+        .main-map {
+          width: 100%;
+          height: 100%;
         }
       }
     }
@@ -1658,6 +1824,7 @@ section.galeria {
           margin: 0;
           font-family: $goodvibes;
           font-size: 2.7rem;
+          font-weight: 500;
           color: $oliva;
         }
 
@@ -1745,6 +1912,7 @@ section.galeria {
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
+          font-weight: 500;
         }
 
         h2 {
@@ -1832,9 +2000,10 @@ section.galeria {
       padding: 0 1rem 4rem 1rem;
       h3 {
         font-size: 2.7rem;
+        font-weight: 500;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
       }
       p {
@@ -1893,6 +2062,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 2.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -1979,6 +2149,7 @@ section.galeria {
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
+          font-weight: 500;
         }
 
         h2 {
@@ -2064,9 +2235,10 @@ section.galeria {
       padding: 0 1rem 4rem 1rem;
       h3 {
         font-size: 2.7rem;
+        font-weight: 500;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
       }
       p {
@@ -2088,6 +2260,69 @@ section.galeria {
           .imagen {
             width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  section.contacto {
+    padding: 3rem 0;
+    width: 100%;
+    height: auto;
+    .wrapper-box {
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      .first-box {
+        background-image: url('/img/contacto.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 415px;
+        address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          padding: 0rem 1rem;
+          background-color: rgba(0, 0, 0, 0.4);
+          h2 {
+            font-style: normal;
+            color: $blanco;
+            font-size: 1.5rem;
+            font-family: $montserrat;
+            text-align: center;
+            text-shadow: 1px 1px 10px $negro;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+          }
+          p {
+            color: $blanco;
+            margin: 1.2rem 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.05rem;
+            font-family: $montserrat;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 10px $negro;
+          }
+          a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: $blanco;
+            font-family: $montserrat;
+            font-weight: 600;
+          }
+        }
+      }
+      .second-box {
+        width: 100%;
+        height: 415px;
+        .main-map {
+          width: 100%;
+          height: 100%;
         }
       }
     }
@@ -2123,6 +2358,7 @@ section.galeria {
           font-family: $goodvibes;
           font-size: 2.7rem;
           color: $oliva;
+          font-weight: 500;
         }
 
         h2 {
@@ -2209,6 +2445,7 @@ section.galeria {
           font-family: "Great Vibes", cursive;
           font-size: 2.7rem;
           color: #999966;
+          font-weight: 500;
         }
 
         h2 {
@@ -2289,14 +2526,15 @@ section.galeria {
   }
 
   section.galeria {
-    padding: 3rem 0;
+    padding: 4rem 0 3rem 0;
     .main-text {
       padding: 0 1rem 4rem 1rem;
       h3 {
         font-size: 2.7rem;
+        font-weight: 500;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
       }
       p {
@@ -2318,6 +2556,69 @@ section.galeria {
           .imagen {
             width: 100%;
           }
+        }
+      }
+    }
+  }
+
+  section.contacto {
+    padding: 3rem 0;
+    width: 100%;
+    height: auto;
+    .wrapper-box {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      .first-box {
+        background-image: url('/img/contacto.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 415px;
+        address {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          padding: 0rem 1rem;
+          background-color: rgba(0, 0, 0, 0.4);
+          h2 {
+            font-style: normal;
+            color: $blanco;
+            font-size: 1.5rem;
+            font-family: $montserrat;
+            text-align: center;
+            text-shadow: 1px 1px 10px $negro;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+          }
+          p {
+            color: $blanco;
+            margin: 1.2rem 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: $montserrat;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 10px $negro;
+          }
+          a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: $blanco;
+            font-family: $montserrat;
+            font-weight: 600;
+          }
+        }
+      }
+      .second-box {
+        width: 100%;
+        height: 415px;
+        .main-map {
+          width: 100%;
+          height: 100%;
         }
       }
     }
