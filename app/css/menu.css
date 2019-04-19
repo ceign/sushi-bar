@@ -133,6 +133,12 @@ section.bg-hero {
     right: 0;
     bottom: 0; }
 
+section.main-carta .container-cartas .wrapper-carta h5 {
+  font-weight: 500; }
+
+section.main-carta .container-cartas .wrapper-carta a {
+  padding: 5px 0; }
+
 @media (min-width: 1921px) {
   section.bg-hero .main-info {
     width: 100%;
