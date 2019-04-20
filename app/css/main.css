@@ -1324,12 +1324,14 @@ section.contacto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1.15rem;
-          margin-bottom: 1rem; }
+          margin-bottom: 1rem;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .info-texto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1rem;
-          color: #585858; }
+          color: #585858;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .btn-nosotros {
           width: 100%;
           height: auto;
@@ -1611,12 +1613,14 @@ section.contacto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1.15rem;
-          margin-bottom: 1rem; }
+          margin-bottom: 1rem;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .info-texto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1rem;
-          color: #585858; }
+          color: #585858;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .btn-nosotros {
           width: 100%;
           height: auto;
@@ -1682,7 +1686,7 @@ section.contacto {
         section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: 0.83rem;
+          font-size: 1rem;
           color: #585858;
           font-weight: 400;
           line-height: 1.5rem;
@@ -1795,12 +1799,14 @@ section.contacto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1.15rem;
+          line-height: 1.5rem;
           margin-bottom: 1rem; }
         section.bienvenido .container-bienvenidos .main-text .info-texto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1rem;
-          color: #585858; }
+          color: #585858;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .btn-nosotros {
           width: 100%;
           height: auto;
@@ -1866,7 +1872,7 @@ section.contacto {
         section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: 0.83rem;
+          font-size: 1rem;
           color: #585858;
           font-weight: 400;
           line-height: 1.5rem;
@@ -2037,12 +2043,14 @@ section.contacto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1.15rem;
-          margin-bottom: 1rem; }
+          margin-bottom: 1rem;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .info-texto {
           font-family: "Montserrat", sans-serif;
           margin: 0;
           font-size: 1rem;
-          color: #585858; }
+          color: #585858;
+          line-height: 1.5rem; }
         section.bienvenido .container-bienvenidos .main-text .btn-nosotros {
           width: 100%;
           height: auto;
@@ -2108,7 +2116,7 @@ section.contacto {
         section.info-menu .main-container .info-box .texto-secundario {
           font-family: "Montserrat", sans-serif;
           margin: 0;
-          font-size: 0.83rem;
+          font-size: 1rem;
           color: #585858;
           font-weight: 400;
           line-height: 1.5rem;
