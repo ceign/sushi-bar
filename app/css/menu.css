@@ -139,6 +139,140 @@ section.main-carta .container-cartas .wrapper-carta h5 {
 section.main-carta .container-cartas .wrapper-carta a {
   padding: 5px 0; }
 
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0b0d0f;
+  padding: 2rem; }
+  footer .wrapper-footer {
+    width: 100%;
+    height: 100%; }
+    footer .wrapper-footer .main-text {
+      padding: .5rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      footer .wrapper-footer .main-text p {
+        color: #a7a7a7;
+        font-size: 1rem;
+        text-align: center;
+        font-family: "Montserrat", sans-serif; }
+    footer .wrapper-footer .main-anchors {
+      padding: .5rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      footer .wrapper-footer .main-anchors ul.navegacion {
+        list-style: none;
+        padding: .5rem 0;
+        text-align: center; }
+        footer .wrapper-footer .main-anchors ul.navegacion li {
+          padding: .5rem 0; }
+          footer .wrapper-footer .main-anchors ul.navegacion li a {
+            color: #fff;
+            text-decoration: none;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: 1px; }
+      footer .wrapper-footer .main-anchors a.btn-footer {
+        width: 30%;
+        height: 2.5rem;
+        margin: 1rem 0;
+        cursor: pointer; }
+        footer .wrapper-footer .main-anchors a.btn-footer button {
+          background-color: #25D366;
+          border: none;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          text-transform: uppercase;
+          font-family: "Pontano Sans", sans-serif;
+          cursor: pointer;
+          letter-spacing: 1.5px;
+          font-weight: 900;
+          border-radius: 6px;
+          font-size: 1.08rem; }
+          footer .wrapper-footer .main-anchors a.btn-footer button span {
+            padding: .5rem; }
+      footer .wrapper-footer .main-anchors h4 {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 1rem; }
+      footer .wrapper-footer .main-anchors ul.social {
+        padding: 1rem 0;
+        list-style: none;
+        width: 25%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        footer .wrapper-footer .main-anchors ul.social li {
+          display: inline-block; }
+          footer .wrapper-footer .main-anchors ul.social li a span {
+            font-size: 2rem; }
+        footer .wrapper-footer .main-anchors ul.social li.facebook a {
+          color: #447fff; }
+        footer .wrapper-footer .main-anchors ul.social li.instagram a {
+          color: #bc2a8d; }
+    footer .wrapper-footer .main-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      footer .wrapper-footer .main-info a {
+        color: #fff;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: .85rem;
+        letter-spacing: 2px;
+        font-weight: 600;
+        padding-bottom: .5rem; }
+      footer .wrapper-footer .main-info p {
+        color: #fff;
+        padding: .5rem 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+
 @media (min-width: 1921px) {
   section.bg-hero .main-info {
     width: 100%;
@@ -224,7 +358,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 2rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -233,20 +367,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 3rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 3rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%;
@@ -379,7 +513,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 2rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -388,20 +522,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 3rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 3rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -431,7 +565,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 2rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -440,20 +574,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 3rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 3rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -483,7 +617,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 2rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -492,20 +626,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 3rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 3rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; } }
 
 @media (min-width: 1601px) and (max-width: 1920px) {
   section.bg-hero .main-info {
@@ -593,7 +727,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -602,20 +736,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%;
@@ -748,7 +882,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -757,20 +891,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -800,7 +934,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -809,20 +943,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -852,7 +986,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -861,20 +995,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; } }
 
 @media (min-width: 1441px) and (max-width: 1600px) {
   section.bg-hero .main-info {
@@ -962,7 +1096,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -971,20 +1105,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%;
@@ -1117,7 +1251,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -1126,20 +1260,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -1169,7 +1303,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -1178,20 +1312,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -1221,7 +1355,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -1230,20 +1364,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; } }
 
 @media (min-width: 1201px) and (max-width: 1440px) {
   section.bg-hero .main-info {
@@ -1330,7 +1464,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -1339,20 +1473,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%;
@@ -1485,7 +1619,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -1494,20 +1628,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -1537,7 +1671,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -1546,20 +1680,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -1589,7 +1723,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -1598,20 +1732,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; } }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   section.bg-hero .main-info {
@@ -1699,7 +1833,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -1708,20 +1842,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%;
@@ -1854,7 +1988,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -1863,20 +1997,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -1906,7 +2040,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -1915,20 +2049,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -1958,7 +2092,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -1967,20 +2101,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /*
@@ -2071,7 +2205,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -2080,20 +2214,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%;
@@ -2239,7 +2373,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -2248,20 +2382,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -2291,7 +2425,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -2300,20 +2434,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -2343,7 +2477,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -2352,20 +2486,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   /*
@@ -2442,7 +2576,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -2451,20 +2585,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%; }
@@ -2606,7 +2740,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -2615,20 +2749,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -2657,7 +2791,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -2666,20 +2800,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -2708,7 +2842,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -2717,20 +2851,139 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; }
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #0b0d0f;
+    padding: 4rem 1rem; }
+    footer .wrapper-footer {
+      width: 100%;
+      height: 100%; }
+      footer .wrapper-footer .main-text {
+        padding: 1rem 0; }
+        footer .wrapper-footer .main-text p {
+          color: #a7a7a7;
+          font-size: 1rem;
+          text-align: center;
+          font-family: "Montserrat", sans-serif; }
+      footer .wrapper-footer .main-anchors {
+        padding: 1rem 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        footer .wrapper-footer .main-anchors ul.navegacion {
+          list-style: none;
+          padding: 1rem 0;
+          text-align: center; }
+          footer .wrapper-footer .main-anchors ul.navegacion li {
+            padding: 10px 0; }
+            footer .wrapper-footer .main-anchors ul.navegacion li a {
+              color: #fff;
+              text-decoration: none;
+              font-family: "Montserrat", sans-serif;
+              text-transform: uppercase;
+              font-size: .7rem;
+              font-weight: 700;
+              letter-spacing: 1px; }
+        footer .wrapper-footer .main-anchors a.btn-footer {
+          width: 70%;
+          height: 3rem;
+          margin: 1rem 0;
+          cursor: pointer; }
+          footer .wrapper-footer .main-anchors a.btn-footer button {
+            background-color: #25D366;
+            border: none;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: "Pontano Sans", sans-serif;
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+            border-radius: 6px;
+            font-size: 1rem; }
+            footer .wrapper-footer .main-anchors a.btn-footer button span {
+              padding: .5rem; }
+        footer .wrapper-footer .main-anchors h4 {
+          color: #fff;
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-top: 1rem; }
+        footer .wrapper-footer .main-anchors ul.social {
+          padding: 1rem 0;
+          list-style: none;
+          width: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+          footer .wrapper-footer .main-anchors ul.social li {
+            display: inline-block; }
+            footer .wrapper-footer .main-anchors ul.social li a span {
+              font-size: 2rem; }
+          footer .wrapper-footer .main-anchors ul.social li.facebook a {
+            color: #447fff; }
+          footer .wrapper-footer .main-anchors ul.social li.instagram a {
+            color: #bc2a8d; }
+      footer .wrapper-footer .main-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        footer .wrapper-footer .main-info a {
+          color: #fff;
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-size: .85rem;
+          letter-spacing: 2px;
+          font-weight: 600; }
+        footer .wrapper-footer .main-info p {
+          color: #fff;
+          padding: 1rem 0;
+          font-family: "Montserrat", sans-serif;
+          font-size: .7rem;
+          text-transform: uppercase;
+          letter-spacing: 1px; } }
 
 @media (max-width: 575.98px) {
   /*
@@ -2806,7 +3059,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-cantidad {
@@ -2815,20 +3068,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-60 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .texto-box {
           width: 100%;
           height: 100%; }
@@ -2969,7 +3222,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-cantidad {
@@ -2978,20 +3231,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-40 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -3019,7 +3272,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-cantidad {
@@ -3028,20 +3281,20 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-30 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
         section.main-carta .container-cartas .wrapper-carta .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -3069,7 +3322,7 @@ section.main-carta .container-cartas .wrapper-carta a {
               font-family: "Montserrat", sans-serif;
               font-size: 1.5rem;
               font-weight: 900;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               text-transform: uppercase;
               text-align: center; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-cantidad {
@@ -3078,17 +3331,136 @@ section.main-carta .container-cartas .wrapper-carta a {
               text-align: center;
               font-size: 2rem;
               font-weight: 700;
-              text-shadow: 1px 1px 10px #16191e; }
+              text-shadow: 1px 1px 10px #0b0d0f; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-ingredientes {
               color: #fff;
               text-align: center;
               margin: 0;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e;
+              text-shadow: 1px 1px 10px #0b0d0f;
               margin-bottom: 1rem; }
             section.main-carta .container-cartas .wrapper-carta .img-box-24 .texto .texto-precio {
               color: #ffcc66;
               margin: 0;
               font-size: 2rem;
               font-weight: 600;
-              text-shadow: 1px 1px 10px #16191e; } }
+              text-shadow: 1px 1px 10px #0b0d0f; }
+  footer {
+    width: 100%;
+    height: auto;
+    background-color: #0b0d0f;
+    padding: 4rem 1rem; }
+    footer .wrapper-footer {
+      width: 100%;
+      height: 100%; }
+      footer .wrapper-footer .main-text {
+        padding: 1rem 0; }
+        footer .wrapper-footer .main-text p {
+          color: #a7a7a7;
+          font-size: 1rem;
+          text-align: center;
+          font-family: "Montserrat", sans-serif; }
+      footer .wrapper-footer .main-anchors {
+        padding: 1rem 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        footer .wrapper-footer .main-anchors ul.navegacion {
+          list-style: none;
+          padding: 1rem 0;
+          text-align: center; }
+          footer .wrapper-footer .main-anchors ul.navegacion li {
+            padding: 10px 0; }
+            footer .wrapper-footer .main-anchors ul.navegacion li a {
+              color: #fff;
+              text-decoration: none;
+              font-family: "Montserrat", sans-serif;
+              text-transform: uppercase;
+              font-size: .7rem;
+              font-weight: 700;
+              letter-spacing: 1px; }
+        footer .wrapper-footer .main-anchors a.btn-footer {
+          width: 70%;
+          height: 3rem;
+          margin: 1rem 0;
+          cursor: pointer; }
+          footer .wrapper-footer .main-anchors a.btn-footer button {
+            background-color: #25D366;
+            border: none;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: "Pontano Sans", sans-serif;
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+            border-radius: 6px;
+            font-size: 1rem; }
+            footer .wrapper-footer .main-anchors a.btn-footer button span {
+              padding: .5rem; }
+        footer .wrapper-footer .main-anchors h4 {
+          color: #fff;
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-top: 1rem; }
+        footer .wrapper-footer .main-anchors ul.social {
+          padding: 1rem 0;
+          list-style: none;
+          width: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+          footer .wrapper-footer .main-anchors ul.social li {
+            display: inline-block; }
+            footer .wrapper-footer .main-anchors ul.social li a span {
+              font-size: 2rem; }
+          footer .wrapper-footer .main-anchors ul.social li.facebook a {
+            color: #447fff; }
+          footer .wrapper-footer .main-anchors ul.social li.instagram a {
+            color: #bc2a8d; }
+      footer .wrapper-footer .main-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        footer .wrapper-footer .main-info a {
+          color: #fff;
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-size: .85rem;
+          letter-spacing: 2px;
+          font-weight: 600; }
+        footer .wrapper-footer .main-info p {
+          color: #fff;
+          padding: 1rem 0;
+          font-family: "Montserrat", sans-serif;
+          font-size: .7rem;
+          text-transform: uppercase;
+          letter-spacing: 1px; } }
