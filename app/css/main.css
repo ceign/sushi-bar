@@ -68,13 +68,13 @@ main {
           height: 2px;
           opacity: 1;
           background-color: #fff;
-          -webkit-transition: .5s all ease-in-out;
-          transition: .5s all ease-in-out; }
+          -webkit-transition: 0.5s all ease-in-out;
+          transition: 0.5s all ease-in-out; }
       main .bullets .container-bullets .swiper-pagination-bullet-active {
         background-color: #ffd900d5 !important;
         width: 60px !important;
-        -webkit-transition: .5s all ease-in-out;
-        transition: .5s all ease-in-out; }
+        -webkit-transition: 0.5s all ease-in-out;
+        transition: 0.5s all ease-in-out; }
   main .chevrones {
     height: 10%;
     width: auto;
@@ -469,7 +469,7 @@ footer {
     width: 100%;
     height: 100%; }
     footer .wrapper-footer .main-text {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -489,7 +489,7 @@ footer {
         text-align: center;
         font-family: "Montserrat", sans-serif; }
     footer .wrapper-footer .main-anchors {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -502,16 +502,16 @@ footer {
               align-items: center; }
       footer .wrapper-footer .main-anchors ul.navegacion {
         list-style: none;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         text-align: center; }
         footer .wrapper-footer .main-anchors ul.navegacion li {
-          padding: .5rem 0; }
+          padding: 0.5rem 0; }
           footer .wrapper-footer .main-anchors ul.navegacion li a {
             color: #fff;
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
             text-transform: uppercase;
-            font-size: .7rem;
+            font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 1px; }
       footer .wrapper-footer .main-anchors a.btn-footer {
@@ -534,7 +534,7 @@ footer {
           border-radius: 6px;
           font-size: 1.08rem; }
           footer .wrapper-footer .main-anchors a.btn-footer button span {
-            padding: .5rem; }
+            padding: 0.5rem; }
       footer .wrapper-footer .main-anchors h4 {
         color: #fff;
         font-family: "Montserrat", sans-serif;
@@ -583,15 +583,15 @@ footer {
         color: #fff;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        font-size: .85rem;
+        font-size: 0.85rem;
         letter-spacing: 2px;
         font-weight: 600;
-        padding-bottom: .5rem; }
+        padding-bottom: 0.5rem; }
       footer .wrapper-footer .main-info p {
         color: #fff;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         font-family: "Montserrat", sans-serif;
-        font-size: .7rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 1px; }
 
@@ -1649,12 +1649,10 @@ footer {
       section.galeria .wrapper-galeria .container-imgs .bottom .imagen {
         width: 50%; }
   section.contacto {
-    border: 2px solid blue;
     padding: 3rem 0;
     width: 100%;
     height: auto; }
     section.contacto .wrapper-box {
-      border: 1px solid green;
       width: 100%;
       height: 100%;
       display: -webkit-box;
@@ -1665,7 +1663,6 @@ footer {
           -ms-flex-direction: row;
               flex-direction: row; }
       section.contacto .wrapper-box .first-box {
-        border: 1px solid red;
         background-image: url("/img/contacto.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -1714,7 +1711,6 @@ footer {
             font-family: "Montserrat", sans-serif;
             font-weight: 600; }
       section.contacto .wrapper-box .second-box {
-        border: 1px solid black;
         width: 100%;
         height: 415px; }
         section.contacto .wrapper-box .second-box .main-map {
@@ -2210,7 +2206,7 @@ footer {
               text-decoration: none;
               font-family: "Montserrat", sans-serif;
               text-transform: uppercase;
-              font-size: .7rem;
+              font-size: 0.7rem;
               font-weight: 700;
               letter-spacing: 1px; }
         footer .wrapper-footer .main-anchors a.btn-footer {
@@ -2232,7 +2228,7 @@ footer {
             border-radius: 6px;
             font-size: 1rem; }
             footer .wrapper-footer .main-anchors a.btn-footer button span {
-              padding: .5rem; }
+              padding: 0.5rem; }
         footer .wrapper-footer .main-anchors h4 {
           color: #fff;
           font-family: "Montserrat", sans-serif;
@@ -2281,14 +2277,14 @@ footer {
           color: #fff;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          font-size: .85rem;
+          font-size: 0.85rem;
           letter-spacing: 2px;
           font-weight: 600; }
         footer .wrapper-footer .main-info p {
           color: #fff;
           padding: 1rem 0;
           font-family: "Montserrat", sans-serif;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
           letter-spacing: 1px; } }
 
@@ -2573,7 +2569,7 @@ footer {
               text-decoration: none;
               font-family: "Montserrat", sans-serif;
               text-transform: uppercase;
-              font-size: .7rem;
+              font-size: 0.7rem;
               font-weight: 700;
               letter-spacing: 1px; }
         footer .wrapper-footer .main-anchors a.btn-footer {
@@ -2595,7 +2591,7 @@ footer {
             border-radius: 6px;
             font-size: 1rem; }
             footer .wrapper-footer .main-anchors a.btn-footer button span {
-              padding: .5rem; }
+              padding: 0.5rem; }
         footer .wrapper-footer .main-anchors h4 {
           color: #fff;
           font-family: "Montserrat", sans-serif;
@@ -2644,13 +2640,13 @@ footer {
           color: #fff;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          font-size: .85rem;
+          font-size: 0.85rem;
           letter-spacing: 2px;
           font-weight: 600; }
         footer .wrapper-footer .main-info p {
           color: #fff;
           padding: 1rem 0;
           font-family: "Montserrat", sans-serif;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
           letter-spacing: 1px; } }
