@@ -32,7 +32,8 @@ main {
     width: auto;
     position: absolute;
     top: 50%;
-    left: 5%; }
+    left: 5%;
+    opacity: 0.7; }
     main .bullets .container-bullets {
       width: -webkit-max-content;
       width: -moz-max-content;
@@ -48,14 +49,32 @@ main {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       cursor: pointer; }
-      main .bullets .container-bullets .select-bullet {
-        height: 2px;
-        width: 25px;
-        background-color: #fff;
-        cursor: pointer; }
-      main .bullets .container-bullets .select-bullet.active {
-        width: 60px;
-        background-color: #ffd900d5; }
+      main .bullets .container-bullets .swiper-pagination {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: 100%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        main .bullets .container-bullets .swiper-pagination span {
+          border-radius: unset;
+          width: 20px;
+          height: 2px;
+          opacity: 1;
+          background-color: #fff;
+          -webkit-transition: .5s all ease-in-out;
+          transition: .5s all ease-in-out; }
+      main .bullets .container-bullets .swiper-pagination-bullet-active {
+        background-color: #ffd900d5 !important;
+        width: 60px !important;
+        -webkit-transition: .5s all ease-in-out;
+        transition: .5s all ease-in-out; }
   main .chevrones {
     height: 10%;
     width: auto;
@@ -102,6 +121,8 @@ main {
         margin: auto;
         margin-right: 1rem;
         opacity: 0.7; }
+        main .chevrones .container-chevrones .chevron-izquierdo:focus {
+          outline: none !important; }
       main .chevrones .container-chevrones .swiper-button-prev,
       main .chevrones .container-chevrones .swiper-button-next {
         position: unset;
@@ -125,6 +146,8 @@ main {
         margin: auto;
         margin-left: 1rem;
         opacity: 0.7; }
+        main .chevrones .container-chevrones .chevron-derecho:focus {
+          outline: none !important; }
 
 section.bienvenido {
   width: 100%;
@@ -498,6 +521,7 @@ footer {
         cursor: pointer; }
         footer .wrapper-footer .main-anchors a.btn-footer button {
           background-color: #25D366;
+          text-shadow: 1px 1px 10px #0b0d0f;
           border: none;
           width: 100%;
           height: 100%;
@@ -570,6 +594,11 @@ footer {
         font-size: .7rem;
         text-transform: uppercase;
         letter-spacing: 1px; }
+
+@media (min-width: 1025px) and (max-width: 1440px) and (max-height: 800px) {
+  section.bienvenido .container-bienvenidos .first-img {
+    -webkit-transform: translateY(25%) !important;
+            transform: translateY(25%) !important; } }
 
 @media (min-width: 1921px) {
   /*
