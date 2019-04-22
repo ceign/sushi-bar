@@ -33,8 +33,22 @@ gulp.task('autoprefijar', async function(){
     .pipe(gulp.dest('app/css/'))
     }
 );
-  
 
+gulp.task ('jquery', async function() {
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js'
+    ])
+    .pipe(gulp.dest('app/lib/jquery'))
+})
+
+gulp.task('fancy', async function(){
+    return gulp.src([
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'
+    ])
+    .pipe(gulp.dest('app/lib/fancybox'))
+});
+  
 gulp.task('serve', gulp.series('sass', async function () {
     browserSync.init({
         server: "./app"
@@ -46,4 +60,4 @@ gulp.task('serve', gulp.series('sass', async function () {
 
 }));
 
-gulp.task('default', gulp.series('serve'));
+gulp.task('default', gulp.series('serve', 'jquery', 'fancy'));
