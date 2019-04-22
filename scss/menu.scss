@@ -29,6 +29,7 @@ section.bg-hero {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 
   .main-info {
     width: 100%;
@@ -2362,7 +2363,6 @@ footer {
           .container-texto {
             width: 100%;
             height: 100%;
-            //border: 1px solid blue;
 
             h5 {
               margin: 0;
@@ -2395,7 +2395,6 @@ footer {
           .container-producto {
             width: 100%;
             height: auto;
-            //border: 1px solid red;
 
             ul {
               margin: 0;
@@ -2444,7 +2443,6 @@ footer {
           }
 
           .container-buttons {
-            //border: 1px solid blue;
             width: 100%;
             height: auto;
             display: flex;
@@ -2453,7 +2451,6 @@ footer {
 
             .button-phone {
               width: 45%;
-              //border: 1px solid green;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -2470,7 +2467,6 @@ footer {
 
             .button-wssp {
               width: 45%;
-              //border: 1px solid red;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -3287,7 +3283,6 @@ footer {
           .container-texto {
             width: 100%;
             height: 100%;
-            //border: 1px solid blue;
 
             h5 {
               margin: 0;
@@ -3392,7 +3387,6 @@ footer {
 
             .button-wssp {
               width: 45%;
-              //border: 1px solid red;
               display: flex;
               align-items: center;
               justify-content: center;

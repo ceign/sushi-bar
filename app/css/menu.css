@@ -43,7 +43,8 @@ section.bg-hero {
   background-image: url("/img/hero-carta.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   section.bg-hero .main-info {
     width: 100%;
     height: 100%;
@@ -148,7 +149,7 @@ footer {
     width: 100%;
     height: 100%; }
     footer .wrapper-footer .main-text {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -168,7 +169,7 @@ footer {
         text-align: center;
         font-family: "Montserrat", sans-serif; }
     footer .wrapper-footer .main-anchors {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -181,16 +182,16 @@ footer {
               align-items: center; }
       footer .wrapper-footer .main-anchors ul.navegacion {
         list-style: none;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         text-align: center; }
         footer .wrapper-footer .main-anchors ul.navegacion li {
-          padding: .5rem 0; }
+          padding: 0.5rem 0; }
           footer .wrapper-footer .main-anchors ul.navegacion li a {
             color: #fff;
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
             text-transform: uppercase;
-            font-size: .7rem;
+            font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 1px; }
       footer .wrapper-footer .main-anchors a.btn-footer {
@@ -212,7 +213,7 @@ footer {
           border-radius: 6px;
           font-size: 1.08rem; }
           footer .wrapper-footer .main-anchors a.btn-footer button span {
-            padding: .5rem; }
+            padding: 0.5rem; }
       footer .wrapper-footer .main-anchors h4 {
         color: #fff;
         font-family: "Montserrat", sans-serif;
@@ -261,15 +262,15 @@ footer {
         color: #fff;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        font-size: .85rem;
+        font-size: 0.85rem;
         letter-spacing: 2px;
         font-weight: 600;
-        padding-bottom: .5rem; }
+        padding-bottom: 0.5rem; }
       footer .wrapper-footer .main-info p {
         color: #fff;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         font-family: "Montserrat", sans-serif;
-        font-size: .7rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 1px; }
 
@@ -2903,7 +2904,7 @@ footer {
               text-decoration: none;
               font-family: "Montserrat", sans-serif;
               text-transform: uppercase;
-              font-size: .7rem;
+              font-size: 0.7rem;
               font-weight: 700;
               letter-spacing: 1px; }
         footer .wrapper-footer .main-anchors a.btn-footer {
@@ -2925,7 +2926,7 @@ footer {
             border-radius: 6px;
             font-size: 1rem; }
             footer .wrapper-footer .main-anchors a.btn-footer button span {
-              padding: .5rem; }
+              padding: 0.5rem; }
         footer .wrapper-footer .main-anchors h4 {
           color: #fff;
           font-family: "Montserrat", sans-serif;
@@ -2974,14 +2975,14 @@ footer {
           color: #fff;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          font-size: .85rem;
+          font-size: 0.85rem;
           letter-spacing: 2px;
           font-weight: 600; }
         footer .wrapper-footer .main-info p {
           color: #fff;
           padding: 1rem 0;
           font-family: "Montserrat", sans-serif;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
           letter-spacing: 1px; } }
 
@@ -3383,7 +3384,7 @@ footer {
               text-decoration: none;
               font-family: "Montserrat", sans-serif;
               text-transform: uppercase;
-              font-size: .7rem;
+              font-size: 0.7rem;
               font-weight: 700;
               letter-spacing: 1px; }
         footer .wrapper-footer .main-anchors a.btn-footer {
@@ -3406,7 +3407,7 @@ footer {
             border-radius: 6px;
             font-size: 1rem; }
             footer .wrapper-footer .main-anchors a.btn-footer button span {
-              padding: .5rem; }
+              padding: 0.5rem; }
         footer .wrapper-footer .main-anchors h4 {
           color: #fff;
           font-family: "Montserrat", sans-serif;
@@ -3455,13 +3456,13 @@ footer {
           color: #fff;
           text-decoration: none;
           font-family: "Montserrat", sans-serif;
-          font-size: .85rem;
+          font-size: 0.85rem;
           letter-spacing: 2px;
           font-weight: 600; }
         footer .wrapper-footer .main-info p {
           color: #fff;
           padding: 1rem 0;
           font-family: "Montserrat", sans-serif;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
           letter-spacing: 1px; } }
