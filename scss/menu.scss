@@ -128,7 +128,7 @@ section.main-carta {
       h5 {
         font-weight: 500;
       }
-      a{
+      a {
         padding: 5px 0;
       }
     }
@@ -144,7 +144,7 @@ footer {
     width: 100%;
     height: 100%;
     .main-text {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -157,22 +157,22 @@ footer {
       }
     }
     .main-anchors {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       ul.navegacion {
         list-style: none;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         text-align: center;
         li {
-          padding: .5rem 0;
+          padding: 0.5rem 0;
           a {
             color: $blanco;
             text-decoration: none;
             font-family: $montserrat;
             text-transform: uppercase;
-            font-size: .7rem;
+            font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 1px;
           }
@@ -197,7 +197,7 @@ footer {
           border-radius: 6px;
           font-size: 1.08rem;
           span {
-            padding: .5rem;
+            padding: 0.5rem;
           }
         }
       }
@@ -245,17 +245,17 @@ footer {
         color: $blanco;
         text-decoration: none;
         font-family: $montserrat;
-        font-size: .85rem;
+        font-size: 0.85rem;
         letter-spacing: 2px;
         font-weight: 600;
-        padding-bottom: .5rem;
+        padding-bottom: 0.5rem;
       }
 
       p {
         color: $blanco;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         font-family: $montserrat;
-        font-size: .7rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
@@ -3086,7 +3086,7 @@ footer {
               text-decoration: none;
               font-family: $montserrat;
               text-transform: uppercase;
-              font-size: .7rem;
+              font-size: 0.7rem;
               font-weight: 700;
               letter-spacing: 1px;
             }
@@ -3111,7 +3111,7 @@ footer {
             border-radius: 6px;
             font-size: 1rem;
             span {
-              padding: .5rem;
+              padding: 0.5rem;
             }
           }
         }
@@ -3159,7 +3159,7 @@ footer {
           color: $blanco;
           text-decoration: none;
           font-family: $montserrat;
-          font-size: .85rem;
+          font-size: 0.85rem;
           letter-spacing: 2px;
           font-weight: 600;
         }
@@ -3168,7 +3168,7 @@ footer {
           color: $blanco;
           padding: 1rem 0;
           font-family: $montserrat;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
           letter-spacing: 1px;
         }
@@ -3182,7 +3182,7 @@ footer {
   header {
   }
   */
-  
+
   section.bg-hero {
     .main-info {
       width: 100%;
@@ -3604,7 +3604,7 @@ footer {
               text-decoration: none;
               font-family: $montserrat;
               text-transform: uppercase;
-              font-size: .7rem;
+              font-size: 0.7rem;
               font-weight: 700;
               letter-spacing: 1px;
             }
@@ -3617,6 +3617,7 @@ footer {
           cursor: pointer;
           button {
             background-color: $wssp;
+            text-shadow: 1px 1px 10px $negro;
             border: none;
             width: 100%;
             height: 100%;
@@ -3629,7 +3630,7 @@ footer {
             border-radius: 6px;
             font-size: 1rem;
             span {
-              padding: .5rem;
+              padding: 0.5rem;
             }
           }
         }
@@ -3677,7 +3678,7 @@ footer {
           color: $blanco;
           text-decoration: none;
           font-family: $montserrat;
-          font-size: .85rem;
+          font-size: 0.85rem;
           letter-spacing: 2px;
           font-weight: 600;
         }
@@ -3686,7 +3687,7 @@ footer {
           color: $blanco;
           padding: 1rem 0;
           font-family: $montserrat;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-transform: uppercase;
           letter-spacing: 1px;
         }
