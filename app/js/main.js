@@ -1,5 +1,4 @@
 //Swiper Hero
-
 var swiper = new Swiper(".swiper-container", {
   spaceBetween: 30,
   effect: "fade",
@@ -17,7 +16,6 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 //Fancybox
-
 $('[data-fancybox="galeria"]').fancybox({
   transitionEffect: "circular",
   transitionDuration: 900,
@@ -52,6 +50,63 @@ $('[data-fancybox="galeria"]').fancybox({
       ZOOM: "Zoom"
     }
   }
+});
+
+//Scrollreveal
+ScrollReveal().reveal(".bienvenido .main-text h3", {
+  delay: 500,
+  duration: 2000,
+  origin: "bottom",
+  distance: "1rem",
+  reset: false
+});
+
+ScrollReveal().reveal(".bienvenido .main-text h2", {
+  delay: 700,
+  duration: 2000,
+  origin: "bottom",
+  distance: "1rem",
+  reset: false
+});
+
+ScrollReveal().reveal(".bienvenido .main-text .btn-nosotros button", {
+  delay: 700,
+  duration: 2000,
+  reset: false
+});
+
+ScrollReveal().reveal(".info-menu .info-box h3", {
+  delay: 500,
+  duration: 2000,
+  origin: "bottom",
+  distance: "1rem",
+  reset: false
+});
+
+ScrollReveal().reveal(".info-menu .info-box h2", {
+  delay: 700,
+  duration: 2000,
+  origin: "bottom",
+  distance: "1rem",
+  reset: false
+});
+
+ScrollReveal().reveal(".info-menu .info-box .btn-nosotros a", {
+  delay: 700,
+  duration: 2000,
+  reset: false
+});
+
+ScrollReveal().reveal(".galeria .main-text h3", {
+  delay: 500,
+  duration: 2000,
+  reset: false
+});
+
+ScrollReveal().reveal(".galeria .main-text h2", {
+  delay: 700,
+  duration: 2000,
+  reset: false
 });
 
 console.log(screen.width + "x" + screen.height);
