@@ -20,13 +20,11 @@ gulp.task('sass', async function () {
         .pipe(browserSync.stream());
 });
 
-
 gulp.task('comprimir', async function() {
     gulp.src('app/js/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('app/js/dist/'));
 });
-
 
 gulp.task('autoprefijar', async function(){
     gulp.src('scss/**/.scss')
@@ -48,6 +46,13 @@ gulp.task('fancy', async function(){
     ])
     .pipe(gulp.dest('app/lib/fancybox'))
 });
+
+gulp.task ('revealjs', async function() {
+    return gulp.src([
+        'node_modules/scrollreveal/dist/scrollreveal.min.js'
+    ])
+    .pipe(gulp.dest('app/lib/scrollreveal'))
+});
   
 gulp.task('serve', gulp.series('sass', async function () {
     browserSync.init({
@@ -60,4 +65,4 @@ gulp.task('serve', gulp.series('sass', async function () {
 
 }));
 
-gulp.task('default', gulp.series('serve', 'jquery', 'fancy'));
+gulp.task('default', gulp.series('serve', 'jquery', 'fancy', 'revealjs'));
