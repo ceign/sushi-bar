@@ -73,6 +73,7 @@ section.bg-hero {
         display: block;
         position: absolute;
         top: 5rem;
+        outline: none;
 
         span:first-child {
           width: 3px;
@@ -105,6 +106,7 @@ section.bg-hero {
   height: 12px;
   position: relative;
   margin: 1rem 0 4rem 0;
+  overflow: hidden;
   span:first-child {
     width: 98%;
     height: 2px;
