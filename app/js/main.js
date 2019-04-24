@@ -53,6 +53,8 @@ $('[data-fancybox="galeria"]').fancybox({
 });
 
 //Scrollreveal
+
+//INDEX
 ScrollReveal().reveal(".bienvenido .main-text h3", {
   delay: 500,
   duration: 2000,
@@ -109,4 +111,60 @@ ScrollReveal().reveal(".galeria .main-text h2", {
   reset: false
 });
 
-console.log(screen.width + "x" + screen.height);
+//CARTA
+ScrollReveal().reveal(".bg-hero .main-info h3", {
+  delay: 500,
+  duration: 2000,
+  origin: "bottom",
+  distance: "1rem",
+  reset: false
+});
+
+ScrollReveal().reveal(".bg-hero .main-info h1", {
+  delay: 700,
+  duration: 2000,
+  origin: "bottom",
+  distance: "1rem",
+  reset: false
+});
+
+ScrollReveal().reveal(".main-carta h4", {
+  delay: 300,
+  duration: 1500,
+  origin: "center",
+  reset: false
+});
+
+ScrollReveal().reveal(" .lineas span:first-child", {
+  delay: 300,
+  duration: 2000,
+  origin: "left",
+  distance: "100%",
+  reset: false
+});
+
+ScrollReveal().reveal(" .lineas span:last-child", {
+  delay: 400,
+  duration: 2000,
+  origin: "right",
+  distance: "100%",
+  reset: false
+});
+
+//Scroll
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if(this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      var seconds = 1200;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, seconds, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
