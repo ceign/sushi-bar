@@ -17,10 +17,142 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-/*
 header {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  opacity: 1;
+  transition: .3s all ease-in-out;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(10, 10, 10, 0);
+
+  .container-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+
+    .logo-box {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      align-items: center;
+
+      a:focus {
+        outline: none;
+      }
+    }
+
+    .nav-box {
+      height: 100%;
+      width: 60%;
+
+      ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        li {
+          display: inline-block;
+          margin: 0 0.8rem;
+          position: relative;
+          a {
+            text-decoration: none;
+            span {
+              text-transform: uppercase;
+              font-size: 0.7rem;
+              font-family: $montserrat;
+              letter-spacing: 1px;
+              font-weight: 700;
+              color: $blanco;
+              vertical-align: middle;
+              text-shadow: 1px 1px 15px $negro;
+            }
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: $blanco;
+            transform: scale(0, 1);
+            transition: transform 0.5s ease;
+          }
+          &:hover {
+            &:after {
+              transform-origin: center left;
+              transform: scale(1, 1);
+            }
+          }
+        }
+      }
+    }
+
+    .contacto-box {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .wssp-box {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        a {
+          text-decoration: none;
+          svg {
+            font-size: 1.5rem;
+            color: $wssp;
+            vertical-align: middle;
+          }
+          span {
+            margin-left: 1rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: $blanco;
+            vertical-align: middle;
+            text-shadow: 1px 1px 10px $negro;
+          }
+        }
+      }
+
+      .fono-box {
+        width: 100%;
+        margin-top: 0.5rem;
+        a {
+          text-decoration: none;
+          svg {
+            font-size: 1.3rem;
+            color: $phone;
+            vertical-align: middle;
+          }
+          span {
+            margin-left: 1rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: $blanco;
+            vertical-align: middle;
+            text-shadow: 1px 1px 10px $negro;
+          }
+        }
+      }
+    }
+  }
 }
-*/
 
 section.bg-hero {
   width: 100%;
@@ -2652,6 +2784,14 @@ footer {
         }
       }
     }
+  }
+}
+
+//Hidden desktop menu en vistas mobile < 1024
+@media (max-width: 1023.98px) {
+  header {
+   opacity: 0;
+   visibility: hidden;
   }
 }
 
