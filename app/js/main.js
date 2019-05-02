@@ -53,8 +53,7 @@ $('[data-fancybox="galeria"]').fancybox({
 });
 
 //Scrollreveal
-
-//INDEX
+//Home
 ScrollReveal().reveal(".bienvenido .main-text h3", {
   delay: 500,
   duration: 2000,
@@ -111,7 +110,7 @@ ScrollReveal().reveal(".galeria .main-text h2", {
   reset: false
 });
 
-//CARTA
+//Carta
 ScrollReveal().reveal(".bg-hero .main-info h3", {
   delay: 500,
   duration: 2000,
@@ -151,8 +150,9 @@ ScrollReveal().reveal(" .lineas span:last-child", {
   reset: false
 });
 
-//Scroll
-$(document).ready(function() {
+//Funcionalidades
+$(document).ready(function() {3
+  //Scroll
   $("a").on("click", function(event) {
     if (
       location.pathname.replace(/^\//, "") ==
@@ -177,4 +177,9 @@ $(document).ready(function() {
       }
     }
   });
+
+  //Hamburguer menu
+  $('.btn-menu-mob').click(function(){
+		$(this).toggleClass('open');
+	});
 });
