@@ -152,19 +152,29 @@ ScrollReveal().reveal(" .lineas span:last-child", {
 });
 
 //Scroll
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if(this.hash !== "") {
-      event.preventDefault();
+$(document).ready(function() {
+  $("a").on("click", function(event) {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      if (this.hash !== "") {
+        event.preventDefault();
 
-      var hash = this.hash;
-      var seconds = 1200;
+        var hash = this.hash;
+        var seconds = 1200;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, seconds, function(){
-        window.location.hash = hash;
-      });
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          seconds,
+          function() {
+            window.location.hash = hash;
+          }
+        );
+      }
     }
   });
 });
