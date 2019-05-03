@@ -180,6 +180,9 @@ $(document).ready(function() {3
 
   //Hamburguer menu
   $('.btn-menu-mob').click(function(){
-		$(this).toggleClass('open');
-	});
+    $(this).toggleClass('open');
+    $('header .container-nav').toggleClass('active');
+    $('header .btn-menu-mob').toggleClass('close');
+  });
+  
 });

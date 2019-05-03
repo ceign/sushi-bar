@@ -2042,16 +2042,27 @@ footer {
 //Hidden desktop menu en vistas mobile < 1024
 @media (max-width: 1023.98px) {
   header {
+    height: 100%;
+    transition: .5s all ease-in-out;
+    pointer-events: none;
+   
     .btn-menu-mob {
       width: 50px;
       height: 35px;
-      position: relative;
+      position: fixed;
       margin-top: 2rem;
       margin-left: calc(100% - 70px);
       cursor: pointer;
+      pointer-events: all;
       transition: .3s all ease-in-out;
+      z-index: 3;
+      opacity: 1;
+      &.close {
+        opacity: 1;
+      }
 
       span {
+        border: 1px solid $negro;
         background: $blanco;
         position: absolute;
         display: block;
@@ -2064,11 +2075,13 @@ footer {
         &:nth-child(even){
           left: 50%;
           border-radius: 0 9px 9px 0;
+          border-left: unset;
         }
 
         &:nth-child(odd){
           left: 0;
           border-radius: 9px 0 0 9px;
+          border-right: unset;
         }
 
         &:nth-child(1), &:nth-child(2) {
@@ -2122,9 +2135,73 @@ footer {
         top: 20px;
       }
     }
+    
     .container-nav {
+      pointer-events: none;
       opacity: 0;
+      z-index: 0;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      height: 100%;
       visibility: hidden;
+      &.active {
+        opacity: 1;
+        pointer-events: all;
+        background-color: #ccc;
+        visibility: visible;
+        position: fixed;
+      }
+      .logo-box {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 3rem 0;
+        a {
+          img {
+
+          }
+        }
+      }
+
+      .nav-box {
+        width: 100%;
+        height: auto;
+        padding: 3rem 0;
+        ul {
+          flex-direction: column;
+          height: auto;
+          li {
+            margin: 8px;
+            a {
+              span {
+
+              }
+            }
+          }
+        }
+      }
+
+      .contacto-box {
+        width: 100%;
+        height: auto;
+        padding: 3rem 0;
+        
+        .wssp-box {
+          text-align: center;
+        }
+        .fono-box {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  main.bg-slider {
+    .chevrones {
+     z-index: 1;
     }
   }
 }
