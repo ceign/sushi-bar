@@ -359,7 +359,6 @@ section.galeria {
             align-items: center;
             justify-content: center;
             opacity: 0;
-            z-index: 3;
             h4 {
               color: $blanco;
               font-size: 2rem;
@@ -459,7 +458,6 @@ section.galeria {
             align-items: center;
             justify-content: center;
             opacity: 0;
-            z-index: 3;
             h4 {
               color: $blanco;
               font-size: 2rem;
@@ -721,6 +719,31 @@ footer {
     }
   }
 }
+
+/*
+body.preloader-site {
+    overflow: hidden;
+}
+ 
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+ 
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+*/
 
 //Fix .main-imagenes .first-img en height < 800px
 @media (min-width: 1025px) and (max-width: 1440px) and (max-height: 800px) {
@@ -2062,8 +2085,7 @@ footer {
       }
 
       span {
-        border: 1px solid $negro;
-        background: $blanco;
+        background-color: $gris-claro;
         position: absolute;
         display: block;
         width: 50%;
@@ -2147,23 +2169,21 @@ footer {
       padding: 0;
       height: 100%;
       visibility: hidden;
+      height: 100vh;
+      transition: .3s all ease-in-out;
       &.active {
-        opacity: 1;
+        opacity: .97;
         pointer-events: all;
-        background-color: #ccc;
+        background-color: $negro;
         visibility: visible;
         position: fixed;
+        height: 100vh;
       }
       .logo-box {
         width: 100%;
         height: auto;
         justify-content: center;
         padding: 3rem 0;
-        a {
-          img {
-
-          }
-        }
       }
 
       .nav-box {
@@ -2175,11 +2195,6 @@ footer {
           height: auto;
           li {
             margin: 8px;
-            a {
-              span {
-
-              }
-            }
           }
         }
       }

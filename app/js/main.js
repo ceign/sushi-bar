@@ -112,7 +112,7 @@ ScrollReveal().reveal(".galeria .main-text h2", {
 
 //Carta
 ScrollReveal().reveal(".bg-hero .main-info h3", {
-  delay: 500,
+  delay: 200,
   duration: 2000,
   origin: "bottom",
   distance: "1rem",
@@ -120,7 +120,7 @@ ScrollReveal().reveal(".bg-hero .main-info h3", {
 });
 
 ScrollReveal().reveal(".bg-hero .main-info h1", {
-  delay: 700,
+  delay: 400,
   duration: 2000,
   origin: "bottom",
   distance: "1rem",
@@ -151,7 +151,14 @@ ScrollReveal().reveal(" .lineas span:last-child", {
 });
 
 //Funcionalidades
-$(document).ready(function() {3
+$(document).ready(function() {
+
+  //Preloader
+  /*
+  setTimeout(function () {
+    document.getElementById('preloader-wrapper').style.opacity="0";
+  }, 2000);
+  */
   //Scroll
   $("a").on("click", function(event) {
     if (
@@ -184,5 +191,12 @@ $(document).ready(function() {3
     $('header .container-nav').toggleClass('active');
     $('header .btn-menu-mob').toggleClass('close');
   });
-  
+
+  $('header .nav-box ul li a').click(function(){
+    $('header .container-nav').toggleClass('active');
+    $('header .btn-menu-mob').toggleClass('open');
+  });
+
 });
+
+
