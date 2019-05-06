@@ -14,7 +14,76 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: $blanco;
+}
+
+.preloader-container {
+  height: 100vh;
+  width: 100%;
+  background: $negro;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  transition: 0.8s all ease-in-out;
+  .preloader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s all ease-in-out;
+    h1 {
+      color: $price;
+      font-family: $goodvibes;
+      font-weight: 400;
+      font-size: 3rem;
+      letter-spacing: 1px;
+      animation-name: disappear;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    .dots {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        width: 8px;
+        height: 8px;
+        background-color: $price;
+        margin: 0 0.6rem;
+        border-radius: 15px;
+        margin-top: 2%;
+        animation: showHideDot 2.5s ease-in-out infinite;
+
+        $seg: 0.2s;
+        &:nth-child(1) {
+          animation-delay: $seg;
+        }
+        &:nth-child(2) {
+          animation-delay: $seg * 2;
+        }
+        &:nth-child(3) {
+          animation-delay: $seg * 3;
+        }
+        &:nth-child(4) {
+          animation-delay: $seg * 4;
+        }
+        &:nth-child(5) {
+          animation-delay: $seg * 5;
+        }
+      }
+    }
+    img {
+      animation-name: disappear;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      margin-top: 20%;
+    }
+  }
 }
 
 header {
@@ -25,7 +94,6 @@ header {
   left: 0;
   z-index: 3;
   background-color: rgba(10, 10, 10, 0);
-
   .container-nav {
     width: 100%;
     height: 100%;
@@ -34,22 +102,18 @@ header {
     padding: 0 2rem;
     opacity: 1;
     transition: .3s all ease-in-out;
-
     .logo-box {
       height: 100%;
       width: 20%;
       display: flex;
       align-items: center;
-
       a:focus {
         outline: none;
       }
     }
-
     .nav-box {
       height: 100%;
       width: 60%;
-
       ul {
         width: 100%;
         height: 100%;
@@ -95,14 +159,12 @@ header {
         }
       }
     }
-
     .contacto-box {
       height: 100%;
       width: 20%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       .wssp-box {
         width: 100%;
         margin-bottom: 0.5rem;
@@ -126,7 +188,6 @@ header {
           }
         }
       }
-
       .fono-box {
         width: 100%;
         margin-top: 0.5rem;
@@ -162,7 +223,6 @@ section.bg-hero {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-
   .main-info {
     width: 100%;
     height: 100%;
@@ -170,7 +230,6 @@ section.bg-hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     h3 {
       margin: 0;
       font-size: 1.3rem;
@@ -182,7 +241,6 @@ section.bg-hero {
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
-
     h1 {
       margin: 0;
       color: $blanco;
@@ -190,7 +248,6 @@ section.bg-hero {
       font-size: 5.5rem;
       letter-spacing: 6px;
     }
-
     .arrow {
       width: 60px;
       height: 40px;
@@ -198,7 +255,6 @@ section.bg-hero {
       animation-name: bouncing;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-
       a {
         width: 100%;
         height: 100%;
@@ -206,7 +262,6 @@ section.bg-hero {
         position: absolute;
         top: 5rem;
         outline: none;
-
         span:first-child {
           width: 3px;
           height: 30px;
@@ -217,7 +272,6 @@ section.bg-hero {
           transform: rotate(-40deg);
           border-radius: 5px;
         }
-
         span:last-child {
           width: 3px;
           height: 30px;
@@ -385,7 +439,6 @@ footer {
         font-weight: 600;
         padding-bottom: 0.5rem;
       }
-
       p {
         color: $blanco;
         padding: 0.5rem 0;
@@ -407,7 +460,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -419,7 +471,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -433,22 +484,18 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: row;
-
         &:nth-child(2n + 1) {
           flex-direction: row-reverse;
         }
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
@@ -457,7 +504,6 @@ footer {
           min-height: 700px;
           height: auto;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -465,7 +511,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -476,7 +521,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -485,7 +529,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -494,7 +537,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -504,17 +546,14 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
           padding: 0 5rem;
           margin: auto;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 6.7rem;
@@ -523,7 +562,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -532,7 +570,6 @@ footer {
               font-weight: 800;
               font-size: 3.1rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -542,17 +579,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -561,7 +595,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 1.9rem;
@@ -574,7 +607,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -592,7 +624,6 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
@@ -600,11 +631,9 @@ footer {
             padding: 3rem 0;
             justify-content: space-between;
             justify-content: center;
-
             .button-phone {
               display: none;
             }
-
             .button-wssp {
               width: 35%;
               display: flex;
@@ -612,7 +641,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 2.5rem;
                 color: $blanco;
@@ -622,7 +650,6 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
@@ -678,7 +705,6 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -733,7 +759,6 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -741,7 +766,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -749,7 +773,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -760,7 +783,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -769,7 +791,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -778,7 +799,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -802,7 +822,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -814,7 +833,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -828,23 +846,19 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
       padding: 2rem 0;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: row;
-
         &:nth-child(2n + 1) {
           flex-direction: row-reverse;
         }
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
@@ -853,7 +867,6 @@ footer {
           min-height: 700px;
           height: auto;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -861,7 +874,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -872,7 +884,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -881,7 +892,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -890,7 +900,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -900,17 +909,14 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
           padding: 0 5rem;
           margin: auto;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 3rem;
@@ -919,7 +925,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -928,7 +933,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -938,17 +942,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -957,7 +958,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 1.1rem;
@@ -970,7 +970,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -988,7 +987,6 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
@@ -996,11 +994,9 @@ footer {
             padding: 3rem 0;
             justify-content: space-between;
             justify-content: center;
-
             .button-phone {
               display: none;
             }
-
             .button-wssp {
               width: 35%;
               display: flex;
@@ -1008,7 +1004,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.5rem;
                 color: $blanco;
@@ -1018,7 +1013,6 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
@@ -1027,7 +1021,6 @@ footer {
           height: auto;
           min-height: 700px;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1035,7 +1028,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1046,7 +1038,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1055,7 +1046,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1064,7 +1054,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1074,7 +1063,6 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -1082,7 +1070,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1090,7 +1077,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1101,7 +1087,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1110,7 +1095,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1119,7 +1103,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1129,7 +1112,6 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -1137,7 +1119,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1145,7 +1126,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1156,7 +1136,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1165,7 +1144,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1174,7 +1152,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1198,7 +1175,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -1210,7 +1186,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -1224,23 +1199,19 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
       padding: 2rem 0;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: row;
-
         &:nth-child(2n + 1) {
           flex-direction: row-reverse;
         }
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
@@ -1249,7 +1220,6 @@ footer {
           min-height: 700px;
           height: auto;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1257,7 +1227,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1268,7 +1237,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1277,7 +1245,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1286,7 +1253,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1296,17 +1262,14 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
           padding: 0 1rem;
           margin: auto;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 3rem;
@@ -1315,7 +1278,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -1324,7 +1286,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -1334,17 +1295,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -1353,7 +1311,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 1.1rem;
@@ -1366,7 +1323,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -1384,7 +1340,6 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
@@ -1392,11 +1347,9 @@ footer {
             padding: 3rem 0;
             justify-content: space-between;
             justify-content: center;
-
             .button-phone {
               display: none;
             }
-
             .button-wssp {
               width: 35%;
               display: flex;
@@ -1404,7 +1357,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.5rem;
                 color: $blanco;
@@ -1414,7 +1366,6 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
@@ -1423,7 +1374,6 @@ footer {
           height: auto;
           min-height: 700px;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1431,7 +1381,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1442,7 +1391,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1451,7 +1399,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1460,7 +1407,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1470,7 +1416,6 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -1478,7 +1423,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1486,7 +1430,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1497,7 +1440,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1506,7 +1448,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1515,7 +1456,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1525,7 +1465,6 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -1533,7 +1472,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1541,7 +1479,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1552,7 +1489,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1561,7 +1497,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1570,7 +1505,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1594,7 +1528,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -1606,7 +1539,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -1620,22 +1552,18 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: row;
-
         &:nth-child(2n + 1) {
           flex-direction: row-reverse;
         }
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
@@ -1644,7 +1572,6 @@ footer {
           min-height: 700px;
           height: auto;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1652,7 +1579,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1663,7 +1589,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1672,7 +1597,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1681,7 +1605,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1691,17 +1614,14 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
           padding: 0 1rem;
           margin: auto;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 4rem;
@@ -1710,7 +1630,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -1719,7 +1638,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -1729,17 +1647,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -1748,7 +1663,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 1.2rem;
@@ -1761,7 +1675,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -1779,7 +1692,6 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
@@ -1787,11 +1699,9 @@ footer {
             padding: 3rem 0 2rem 0;
             justify-content: space-between;
             justify-content: center;
-
             .button-phone {
               display: none;
             }
-
             .button-wssp {
               width: 45%;
               display: flex;
@@ -1799,7 +1709,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.8rem;
                 color: $blanco;
@@ -1809,7 +1718,6 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
@@ -1818,7 +1726,6 @@ footer {
           height: auto;
           min-height: 700px;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1826,7 +1733,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1837,7 +1743,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1846,7 +1751,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1855,7 +1759,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1865,7 +1768,6 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -1873,7 +1775,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1881,7 +1782,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1892,7 +1792,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1901,7 +1800,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1910,7 +1808,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1920,7 +1817,6 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -1928,7 +1824,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -1936,7 +1831,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -1947,7 +1841,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -1956,7 +1849,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -1965,7 +1857,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -1989,7 +1880,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -2001,7 +1891,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -2015,23 +1904,19 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
       padding: 2rem 0;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: row;
-
         &:nth-child(2n + 1) {
           flex-direction: row-reverse;
         }
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
@@ -2040,7 +1925,6 @@ footer {
           min-height: 700px;
           height: auto;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2048,7 +1932,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2059,7 +1942,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2068,7 +1950,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2077,7 +1958,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2087,17 +1967,14 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
           padding: 0 1rem;
           margin: auto;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 3rem;
@@ -2106,7 +1983,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -2115,7 +1991,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -2125,17 +2000,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -2144,7 +2016,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 0.9rem;
@@ -2157,7 +2028,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -2175,7 +2045,6 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
@@ -2183,11 +2052,9 @@ footer {
             padding: 2rem 0;
             justify-content: space-between;
             justify-content: center;
-
             .button-phone {
               display: none;
             }
-
             .button-wssp {
               width: 45%;
               display: flex;
@@ -2195,7 +2062,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -2205,7 +2071,6 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
@@ -2214,7 +2079,6 @@ footer {
           height: auto;
           min-height: 700px;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2222,7 +2086,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2233,7 +2096,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2242,7 +2104,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2251,7 +2112,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2261,7 +2121,6 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -2269,7 +2128,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2277,7 +2135,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2288,7 +2145,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2297,7 +2153,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2306,7 +2161,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2316,7 +2170,6 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -2324,7 +2177,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2332,7 +2184,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2343,7 +2194,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2352,7 +2202,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2361,7 +2210,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2377,11 +2225,6 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*
-  header {
-  }
-  */
-
   section.bg-hero {
     .main-info {
       width: 100%;
@@ -2390,7 +2233,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -2402,7 +2244,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -2416,22 +2257,18 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: row;
-
         &:nth-child(2n + 1) {
           flex-direction: row-reverse;
         }
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
@@ -2440,7 +2277,6 @@ footer {
           min-height: 700px;
           height: auto;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2448,7 +2284,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2459,7 +2294,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2468,7 +2302,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2477,7 +2310,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2487,17 +2319,14 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
           padding: 0 1rem;
           margin: auto;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 3rem;
@@ -2506,7 +2335,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -2515,7 +2343,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -2525,17 +2352,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -2544,7 +2368,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 0.9rem;
@@ -2557,7 +2380,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -2575,14 +2397,12 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
             display: flex;
             padding: 2rem 0;
             justify-content: space-between;
-
             .button-phone {
               width: 45%;
               display: flex;
@@ -2590,7 +2410,6 @@ footer {
               justify-content: center;
               background-color: $phone;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -2598,7 +2417,6 @@ footer {
                 text-align: center;
               }
             }
-
             .button-wssp {
               width: 45%;
               display: flex;
@@ -2606,7 +2424,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -2616,7 +2433,6 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
@@ -2625,7 +2441,6 @@ footer {
           height: auto;
           min-height: 700px;
           margin: 0 1rem;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2633,7 +2448,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2644,7 +2458,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2653,7 +2466,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2662,7 +2474,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2672,7 +2483,6 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
@@ -2680,7 +2490,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2688,7 +2497,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2699,7 +2507,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2708,7 +2515,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2717,7 +2523,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2727,7 +2532,6 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
@@ -2735,7 +2539,6 @@ footer {
           width: 100%;
           min-height: 700px;
           height: auto;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -2743,7 +2546,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -2754,7 +2556,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -2763,7 +2564,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -2772,7 +2572,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -2793,7 +2592,6 @@ footer {
     height: 100%;
     transition: .5s all ease-in-out;
     pointer-events: none;
-   
     .btn-menu-mob {
       width: 50px;
       height: 35px;
@@ -2808,7 +2606,6 @@ footer {
       &.close {
         opacity: 1;
       }
-
       span {
         background-color: $gris-claro;
         position: absolute;
@@ -2818,71 +2615,57 @@ footer {
         opacity: 1;
         transform: rotate(0deg);
         transition: .3s all ease-in-out;
-
         &:nth-child(even){
           left: 50%;
           border-radius: 0 9px 9px 0;
           border-left: unset;
         }
-
         &:nth-child(odd){
           left: 0;
           border-radius: 9px 0 0 9px;
           border-right: unset;
         }
-
         &:nth-child(1), &:nth-child(2) {
           top: 0;
         }
-
         &:nth-child(3), &:nth-child(4) {
           top: 13px;
         }
-
         &:nth-child(5), &:nth-child(6) {
           top: 26px;
         }
       }
-
       &.open span:nth-child(1), &.open span:nth-child(6){
         transform: rotate(45deg);
       }
-
       &.open span:nth-child(2), &.open span:nth-child(5){
         transform: rotate(-45deg);
       }
-
       &.open span:nth-child(1){
         left: 5px;
         top: 7px;
       }
-
       &.open span:nth-child(2){
         left: calc(50% - 7px);
         top: 7px;
       }
-
       &.open span:nth-child(3){
         left: -50%;
         opacity: 0;
       }
-
       &.open span:nth-child(4){
         left: 100%;
         opacity: 0;
       }
-
       &.open span:nth-child(5){
         left:5px;
         top: 20px;
       }
-
       &.open span:nth-child(6){
         left: calc(50% - 7px);
         top: 20px;
       }
     }
-    
     .container-nav {
       pointer-events: none;
       opacity: 0;
@@ -2910,7 +2693,6 @@ footer {
         justify-content: center;
         padding: 3rem 0;
       }
-
       .nav-box {
         width: 100%;
         height: auto;
@@ -2923,12 +2705,10 @@ footer {
           }
         }
       }
-
       .contacto-box {
         width: 100%;
         height: auto;
         padding: 3rem 0;
-        
         .wssp-box {
           text-align: center;
         }
@@ -2941,11 +2721,6 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /*
-  header {
-  }
-  */
-
   section.bg-hero {
     .main-info {
       width: 100%;
@@ -2954,7 +2729,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -2966,7 +2740,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -2980,23 +2753,19 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
           background-position: center;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3004,7 +2773,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3015,7 +2783,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3024,7 +2791,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3033,7 +2799,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3043,15 +2808,12 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 3rem;
@@ -3060,7 +2822,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -3069,7 +2830,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -3079,17 +2839,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -3098,7 +2855,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 0.9rem;
@@ -3111,7 +2867,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -3129,14 +2884,12 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
             display: flex;
             padding: 2rem 0;
             justify-content: space-between;
-
             .button-phone {
               width: 45%;
               display: flex;
@@ -3144,7 +2897,6 @@ footer {
               justify-content: center;
               background-color: $phone;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -3152,7 +2904,6 @@ footer {
                 text-align: center;
               }
             }
-
             .button-wssp {
               width: 45%;
               display: flex;
@@ -3160,7 +2911,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -3170,14 +2920,12 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
           background-position: center;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3185,7 +2933,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3196,7 +2943,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3205,7 +2951,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3214,7 +2959,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3224,14 +2968,12 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
           background-position: center;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3239,7 +2981,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3250,7 +2991,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3259,7 +2999,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3268,7 +3007,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3278,14 +3016,12 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
           background-position: center;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3293,7 +3029,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3304,7 +3039,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3313,7 +3047,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3322,7 +3055,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3446,7 +3178,6 @@ footer {
           letter-spacing: 2px;
           font-weight: 600;
         }
-
         p {
           color: $blanco;
           padding: 1rem 0;
@@ -3461,11 +3192,6 @@ footer {
 }
 
 @media (max-width: 575.98px) {
-  /*
-  header {
-  }
-  */
-
   section.bg-hero {
     .main-info {
       width: 100%;
@@ -3474,7 +3200,6 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       h3 {
         margin: 0;
         font-size: 1.3rem;
@@ -3486,7 +3211,6 @@ footer {
         margin-top: 1rem;
         margin-bottom: 2rem;
       }
-
       h1 {
         margin: 0;
         color: $blanco;
@@ -3500,22 +3224,18 @@ footer {
   section.main-carta {
     width: 100%;
     height: auto;
-
     .container-cartas {
       width: 100%;
       height: 100%;
-
       .wrapper-carta {
         width: 100%;
         height: 100%;
         padding: 2rem 1rem;
-
         .img-box-60 {
           background-image: url("/img/carta1.jpg");
           background-repeat: no-repeat;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3523,7 +3243,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3534,7 +3253,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3543,7 +3261,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3552,7 +3269,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3562,15 +3278,12 @@ footer {
             }
           }
         }
-
         .texto-box {
           width: 100%;
           height: 100%;
-
           .container-texto {
             width: 100%;
             height: 100%;
-
             h5 {
               margin: 0;
               font-size: 3rem;
@@ -3579,7 +3292,6 @@ footer {
               text-align: center;
               padding-top: 2rem;
             }
-
             h3 {
               margin: 0;
               text-align: center;
@@ -3588,7 +3300,6 @@ footer {
               font-weight: 800;
               font-size: 1.8rem;
             }
-
             .personas {
               margin: 0;
               font-family: $pontano;
@@ -3598,17 +3309,14 @@ footer {
               padding-bottom: 2rem;
             }
           }
-
           .container-producto {
             width: 100%;
             height: auto;
-
             ul {
               margin: 0;
               list-style: none;
               width: 100%;
               height: 100%;
-
               li {
                 margin-bottom: 2.5rem;
                 .detalles {
@@ -3617,7 +3325,6 @@ footer {
                     flex-direction: row;
                     justify-content: space-between;
                     margin: 0.5rem 0;
-
                     h4 {
                       margin: 0;
                       font-size: 0.9rem;
@@ -3630,7 +3337,6 @@ footer {
                       }
                     }
                   }
-
                   .ingredientes {
                     p {
                       margin: 0;
@@ -3648,14 +3354,12 @@ footer {
               }
             }
           }
-
           .container-buttons {
             width: 100%;
             height: auto;
             display: flex;
             padding: 2rem 0;
             justify-content: space-between;
-
             .button-phone {
               width: 45%;
               display: flex;
@@ -3663,7 +3367,6 @@ footer {
               justify-content: center;
               background-color: $phone;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -3671,7 +3374,6 @@ footer {
                 text-align: center;
               }
             }
-
             .button-wssp {
               width: 45%;
               display: flex;
@@ -3679,7 +3381,6 @@ footer {
               justify-content: center;
               background-color: $wssp;
               border-radius: 3px;
-
               a {
                 font-size: 1.4rem;
                 color: $blanco;
@@ -3689,13 +3390,11 @@ footer {
             }
           }
         }
-
         .img-box-40 {
           background-image: url("/img/carta2.jpg");
           background-repeat: no-repeat;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3703,7 +3402,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3714,7 +3412,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3723,7 +3420,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3732,7 +3428,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3742,13 +3437,11 @@ footer {
             }
           }
         }
-
         .img-box-30 {
           background-image: url("/img/carta3.jpg");
           background-repeat: no-repeat;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3756,7 +3449,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3767,7 +3459,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3776,7 +3467,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3785,7 +3475,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3795,13 +3484,11 @@ footer {
             }
           }
         }
-
         .img-box-24 {
           background-image: url("/img/carta4.jpg");
           background-repeat: no-repeat;
           width: 100%;
           height: 700px;
-
           .texto {
             height: 100%;
             width: 100%;
@@ -3809,7 +3496,6 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             h2 {
               color: $blanco;
               margin: 0;
@@ -3820,7 +3506,6 @@ footer {
               text-transform: uppercase;
               text-align: center;
             }
-
             .texto-cantidad {
               margin: 1rem 0;
               color: $blanco;
@@ -3829,7 +3514,6 @@ footer {
               font-weight: 700;
               text-shadow: 1px 1px 10px $negro;
             }
-
             .texto-ingredientes {
               color: $blanco;
               text-align: center;
@@ -3838,7 +3522,6 @@ footer {
               text-shadow: 1px 1px 10px $negro;
               margin-bottom: 1rem;
             }
-
             .texto-precio {
               color: $price;
               margin: 0;
@@ -3963,7 +3646,6 @@ footer {
           letter-spacing: 2px;
           font-weight: 600;
         }
-
         p {
           color: $blanco;
           padding: 1rem 0;
