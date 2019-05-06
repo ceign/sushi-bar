@@ -112,7 +112,7 @@ ScrollReveal().reveal(".galeria .main-text h2", {
 
 //Carta
 ScrollReveal().reveal(".bg-hero .main-info h3", {
-  delay: 200,
+  delay: 2200,
   duration: 2000,
   origin: "bottom",
   distance: "1rem",
@@ -120,7 +120,7 @@ ScrollReveal().reveal(".bg-hero .main-info h3", {
 });
 
 ScrollReveal().reveal(".bg-hero .main-info h1", {
-  delay: 400,
+  delay: 2400,
   duration: 2000,
   origin: "bottom",
   distance: "1rem",
@@ -152,13 +152,12 @@ ScrollReveal().reveal(" .lineas span:last-child", {
 
 //Funcionalidades
 $(document).ready(function() {
-
   //Preloader
-  /*
-  setTimeout(function () {
-    document.getElementById('preloader-wrapper').style.opacity="0";
+  setTimeout(function() {
+    document.getElementById("preloader-container").style.opacity = "0";
+    document.getElementById("preloader-container").style.zIndex = "-5";
   }, 2000);
-  */
+
   //Scroll
   $("a").on("click", function(event) {
     if (
@@ -186,17 +185,14 @@ $(document).ready(function() {
   });
 
   //Hamburguer menu
-  $('.btn-menu-mob').click(function(){
-    $(this).toggleClass('open');
-    $('header .container-nav').toggleClass('active');
-    $('header .btn-menu-mob').toggleClass('close');
+  $(".btn-menu-mob").click(function() {
+    $(this).toggleClass("open");
+    $(this).toggleClass("close");
+    $("header .container-nav").toggleClass("active");
   });
 
-  $('header .nav-box ul li a').click(function(){
-    $('header .container-nav').toggleClass('active');
-    $('header .btn-menu-mob').toggleClass('open');
+  $("header .nav-box ul li a").click(function() {
+    $("header .container-nav").toggleClass("active");
+    $("header .btn-menu-mob").toggleClass("open");
   });
-
 });
-
-
